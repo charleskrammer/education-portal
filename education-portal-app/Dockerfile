@@ -29,35 +29,29 @@ WORKDIR /app
 
 ENV NODE_ENV=production \
     NEXT_TELEMETRY_DISABLED=1 \
-    PORT=3000 \
+    PORT=8080 \
     HOSTNAME=0.0.0.0
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends ca-certificates openssl \
   && rm -rf /var/lib/apt/lists/*
 
-# Non-root user: node (uid 1000) already exists in the node:* base image
 RUN groupadd --gid 1001 nodejs \
   && useradd --uid 1001 --gid nodejs --shell /bin/bash --create-home nextjs
 
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-# Copy standalone Next.js server and its bundled node_modules
 COPY --from=build --chown=nextjs:nodejs /app/.next/standalone ./
-# Overwrite standalone node_modules with the full pruned production set
-# (provides prisma CLI + @prisma/client + bcryptjs for migrations & seeding)
 COPY --from=build --chown=nextjs:nodejs /app/node_modules ./node_modules
 COPY --from=build --chown=nextjs:nodejs /app/.next/static ./.next/static
 COPY --from=build --chown=nextjs:nodejs /app/public ./public
 COPY --from=build --chown=nextjs:nodejs /app/prisma ./prisma
 
-EXPOSE 3000
+EXPOSE 8080
 
-# Health check: /api/health returns 200 {"status":"ok"} instantly with no DB
-# dependency — a pure liveness probe. wget is available in bookworm-slim.
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD wget -qO- http://localhost:3000/api/health >/dev/null 2>&1 || exit 1
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+  CMD wget -qO- http://localhost:8080/health/live >/dev/null 2>&1 || exit 1
 
 USER nextjs
 
