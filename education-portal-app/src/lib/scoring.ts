@@ -36,19 +36,30 @@ export function computeGrade(percentile: number): GradeLabel {
 /**
  * Compute percentile rank of a score within an array of all scores.
  * Returns 0–100. A score higher than all others returns 100.
+ * When all scores are equal (everyone tied), returns 50.
  */
 export function computePercentile(score: number, allScores: number[]): number {
   if (allScores.length <= 1) return 100;
   const below = allScores.filter((s) => s < score).length;
+  const above = allScores.filter((s) => s > score).length;
+  if (below === 0 && above === 0) return 50; // everyone tied
   return Math.round((below / (allScores.length - 1)) * 100);
 }
 
 /**
  * Compute 1-based rank position within an array of all scores.
- * Rank 1 = highest score.
+ * Rank 1 = highest score. Tied scores share the same rank.
+ * When all scores are equal, returns the median position instead of 1
+ * to avoid every user seeing "#1" before any quiz is completed.
  */
 export function computeRankPosition(score: number, allScores: number[]): number {
-  return allScores.filter((s) => s > score).length + 1;
+  const above = allScores.filter((s) => s > score).length;
+  const tied  = allScores.filter((s) => s === score).length;
+  if (above === 0 && tied === allScores.length) {
+    // Everyone is tied — return middle position so no one appears falsely #1
+    return Math.ceil(allScores.length / 2);
+  }
+  return above + 1;
 }
 
 /**
