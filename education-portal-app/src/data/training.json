@@ -1,37 +1,395 @@
 {
   "portal": {
-    "title": "Claude Learning Path",
-    "subtitle": "A 4-step journey to master Claude — from basics to advanced integrations. All 31 videos sourced exclusively from official Anthropic channels.",
-    "audience": "Technical and non-technical employees"
+    "title": "Claude Mastery Path",
+    "subtitle": "An 8-step journey from AI beginner to Claude expert — covering AI fundamentals, prompting, Claude.ai features, professional workflows, and Claude Code. All videos sourced exclusively from official Anthropic channels.",
+    "audience": "All employees — from first-time AI users to advanced practitioners"
   },
   "steps": [
     {
       "id": "1",
-      "title": "Claude Basics",
-      "summary": "Discover Claude, learn the interface, and master the core features: Artifacts, Projects, Connectors, and Skills.",
-      "time_estimate": "~60 min",
+      "title": "AI & Claude Fundamentals",
+      "summary": "Build a solid foundation: understand what AI is, how large language models work, what Claude can and cannot do, and how to use AI responsibly.",
+      "time_estimate": "~55 min",
       "objectives": [
-        "Understand what Claude is and navigate Claude.ai confidently",
-        "Create and iterate on Artifacts for documents, code, and interactive content",
-        "Use Projects to maintain persistent context across sessions",
-        "Connect external tools via Connectors",
-        "Create and use Skills to teach Claude your working preferences"
+        "Understand what generative AI is and how it differs from traditional software",
+        "Recognize Claude's key capabilities and limitations",
+        "Apply responsible AI practices around data privacy and diligence",
+        "Explain why AI Fluency matters for your career and organization"
       ],
       "checklist": [
-        "Sign in to Claude.ai and complete your first conversation",
-        "Create one Artifact (document or interactive HTML)",
-        "Set up a Project with a custom instruction",
-        "Connect at least one external tool via Connectors",
-        "Create a Skill based on a recurring task"
+        "Complete all 6 videos in this step",
+        "Identify two tasks in your current role where AI could add value",
+        "Review your organization's AI and data privacy policy",
+        "Complete the quiz for each video with ≥ 80% accuracy"
       ],
       "topics": [
         {
-          "id": "s1t1-start",
-          "title": "Getting Started",
-          "description": "Set up your Claude account, understand the interface, and discover the Claude Sonnet 4.5 model's capabilities.",
+          "id": "s1t1-intro",
+          "title": "Introduction to AI",
+          "description": "Structured lessons from Anthropic's AI Fluency course — covering why AI fluency matters, how generative AI works, and what to expect from tools like Claude.",
           "videos": [
             {
               "id": "s1v1",
+              "title": "Lesson 1: Introduction to AI Fluency",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=JpGtOfSgR-c",
+              "provider": "youtube",
+              "reason": "Lesson 1: Introduction to AI Fluency",
+              "level": "Beginner",
+              "duration": "4:22",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-aif-l1-1",
+                    "question": "What is the primary goal of AI Fluency as introduced in this course?",
+                    "choices": [
+                      "To replace traditional job skills with AI skills",
+                      "To collaborate effectively, efficiently, ethically, and safely with AI",
+                      "To learn how to program AI models",
+                      "To automate all workplace tasks"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI Fluency is about learning to collaborate with AI systems effectively, efficiently, ethically, and safely — not about automating everything or replacing skills."
+                  },
+                  {
+                    "id": "q-aif-l1-2",
+                    "question": "According to the introduction, AI Fluency is relevant for:",
+                    "choices": [
+                      "Only software engineers and data scientists",
+                      "Only managers and executives",
+                      "Anyone who wants to work effectively alongside AI tools",
+                      "Only people in technical roles"
+                    ],
+                    "answerIndex": 2,
+                    "explanation": "AI Fluency is designed for anyone who interacts with AI in their work, regardless of technical background."
+                  },
+                  {
+                    "id": "q-aif-l1-3",
+                    "question": "What does developing AI Fluency primarily help you do?",
+                    "choices": [
+                      "Build your own AI models from scratch",
+                      "Use AI tools more critically and effectively in your daily work",
+                      "Avoid using AI tools altogether",
+                      "Become an AI researcher"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI Fluency helps you use AI tools more critically and effectively — understanding when and how to use them, and when to rely on human judgment."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s1v2",
+              "title": "Lesson 2A: Why do we need AI Fluency?",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=4szRHy_CT7s",
+              "provider": "youtube",
+              "reason": "Lesson 2A: Why do we need AI Fluency?",
+              "level": "Beginner",
+              "duration": "6:22",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-aif-l2a-1",
+                    "question": "Why is AI Fluency increasingly important in today's workplace?",
+                    "choices": [
+                      "Because AI will soon replace all human workers",
+                      "Because AI tools are now widely accessible and impact many jobs",
+                      "Because governments require AI certification",
+                      "Because traditional skills are no longer valued"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI tools have become widely accessible and are impacting many professions, making it important to understand how to work alongside them effectively."
+                  },
+                  {
+                    "id": "q-aif-l2a-2",
+                    "question": "What risk does using AI without proper fluency create?",
+                    "choices": [
+                      "Your computer will break down",
+                      "You may produce poor-quality outputs or make uninformed decisions",
+                      "AI will stop working for you",
+                      "You will be charged more for the service"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Without AI Fluency, users risk accepting incorrect outputs, making poor decisions, or missing opportunities to leverage AI effectively."
+                  },
+                  {
+                    "id": "q-aif-l2a-3",
+                    "question": "How does AI Fluency benefit professionals in their careers?",
+                    "choices": [
+                      "It guarantees a promotion",
+                      "It replaces the need for domain expertise",
+                      "It enables them to work smarter and stay competitive as AI transforms industries",
+                      "It eliminates the need to learn new skills"
+                    ],
+                    "answerIndex": 2,
+                    "explanation": "AI Fluency helps professionals work smarter, adapt to changes in their industry, and remain competitive as AI becomes more prevalent."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s1v3",
+              "title": "Lesson 3A: What is generative AI? (Deep Dive)",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=RyvXxApfHkk",
+              "provider": "youtube",
+              "reason": "Lesson 3A: What is generative AI? (Deep Dive)",
+              "level": "Beginner",
+              "duration": "6:21",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-aif-l3a-1",
+                    "question": "What makes generative AI different from traditional software?",
+                    "choices": [
+                      "It can only perform calculations",
+                      "It generates new content rather than following fixed rules",
+                      "It requires internet access to function",
+                      "It can only process numbers"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Unlike traditional software that follows fixed rules, generative AI creates new content by learning patterns from large amounts of data."
+                  },
+                  {
+                    "id": "q-aif-l3a-2",
+                    "question": "What does a language model like Claude predict when generating a response?",
+                    "choices": [
+                      "The exact answer from a database",
+                      "The most likely next word or token based on context",
+                      "A random word from the dictionary",
+                      "The answer from the most recent Wikipedia edit"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Large language models work by predicting the most probable next token given the context, which is how they generate coherent text."
+                  },
+                  {
+                    "id": "q-aif-l3a-3",
+                    "question": "Which of the following best describes how generative AI learns?",
+                    "choices": [
+                      "It memorizes a fixed database of answers",
+                      "It learns by training on large amounts of text and data",
+                      "It is programmed with explicit rules for every situation",
+                      "It learns only from the current conversation"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Generative AI models are trained on massive datasets, learning patterns to generate relevant and coherent outputs."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s1v4",
+              "title": "Lesson 3B: Capabilities & limitations",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=W5cga7xipRI",
+              "provider": "youtube",
+              "reason": "Lesson 3B: Capabilities & limitations",
+              "level": "Beginner",
+              "duration": "7:20",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-aif-l3b-1",
+                    "question": "Which of the following is a known limitation of generative AI like Claude?",
+                    "choices": [
+                      "It cannot process text",
+                      "It may generate plausible-sounding but incorrect information (hallucinations)",
+                      "It cannot understand questions",
+                      "It only works in English"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "A key limitation of generative AI is hallucination — generating confident-sounding information that is factually incorrect. Always verify important claims."
+                  },
+                  {
+                    "id": "q-aif-l3b-2",
+                    "question": "What is one of Claude's key strengths?",
+                    "choices": [
+                      "Accessing real-time internet data",
+                      "Writing, analysis, summarization, and reasoning across diverse topics",
+                      "Running computer programs autonomously",
+                      "Replacing human decision-making entirely"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude excels at writing, analysis, summarization, and reasoning — making it a powerful assistant for knowledge work across many domains."
+                  },
+                  {
+                    "id": "q-aif-l3b-3",
+                    "question": "Why is it important to verify AI-generated information?",
+                    "choices": [
+                      "Because AI is always wrong",
+                      "Because AI can produce errors and may have outdated knowledge",
+                      "Because AI intentionally misleads users",
+                      "Because AI responses are always incomplete"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI models can produce errors and their training data has a cutoff date. Verification is essential for important decisions."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "s1t2-responsible",
+          "title": "Responsible AI Use",
+          "description": "Understand data privacy, how to protect sensitive information, and why applying diligence — verifying AI outputs — is essential in any professional context.",
+          "videos": [
+            {
+              "id": "s1v5",
+              "title": "Understanding privacy and data",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=e-9J17_yo0c",
+              "provider": "youtube",
+              "reason": "Understanding privacy and data",
+              "level": "Beginner",
+              "duration": "10:56",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-privacy-1",
+                    "question": "What type of data should you be most careful about sharing with AI systems?",
+                    "choices": [
+                      "General industry news",
+                      "Confidential personal or business information",
+                      "Publicly available facts",
+                      "General writing prompts"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Confidential, sensitive, or personal data should be handled with great care when using AI tools."
+                  },
+                  {
+                    "id": "q-privacy-2",
+                    "question": "What is a best practice when working with sensitive business data in Claude?",
+                    "choices": [
+                      "Share all data to get the most accurate response",
+                      "Anonymize or remove identifying information before sharing",
+                      "Only use Claude on personal computers",
+                      "Always use Claude in incognito mode"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Before sharing sensitive data with any AI tool, anonymize or remove identifying information to protect privacy."
+                  },
+                  {
+                    "id": "q-privacy-3",
+                    "question": "Why does data privacy matter when using AI tools professionally?",
+                    "choices": [
+                      "It doesn't matter since AI is always confidential",
+                      "To comply with regulations, protect individuals, and maintain organizational trust",
+                      "Only because IT departments require it",
+                      "Only when working with financial data"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Privacy matters for legal compliance, protecting individuals' rights, and maintaining the trust of clients and colleagues."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s1v6",
+              "title": "Lesson 10: A closer look at Diligence",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=QbLf2zb3oPc",
+              "provider": "youtube",
+              "reason": "Lesson 10: A closer look at Diligence",
+              "level": "Beginner",
+              "duration": "6:51",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-aif-l10-1",
+                    "question": "In the 4D Framework, what does \"Diligence\" primarily involve?",
+                    "choices": [
+                      "Writing longer prompts",
+                      "Critically reviewing and verifying AI outputs before using them",
+                      "Using AI as fast as possible",
+                      "Sharing AI outputs without modification"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Diligence means taking responsibility for reviewing, verifying, and critically evaluating AI-generated content before acting on it."
+                  },
+                  {
+                    "id": "q-aif-l10-2",
+                    "question": "Why is it important to apply Diligence when using AI for factual tasks?",
+                    "choices": [
+                      "Because AI is always wrong",
+                      "Because AI can make errors and you are responsible for the final output",
+                      "Because AI slows down when you trust it too much",
+                      "Because regulators require it in all cases"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "You are ultimately responsible for any output you use or share. AI can make mistakes, so applying diligence protects quality and accuracy."
+                  },
+                  {
+                    "id": "q-aif-l10-3",
+                    "question": "Which practice best demonstrates Diligence in an AI workflow?",
+                    "choices": [
+                      "Copying AI responses directly into final documents",
+                      "Fact-checking AI-generated claims using authoritative sources",
+                      "Asking AI the same question multiple times",
+                      "Only using AI for creative tasks"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Fact-checking AI-generated claims using reliable sources is the essence of Diligence — ensuring outputs are accurate before they influence decisions."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Getting Started with Claude.ai",
+      "summary": "Set up your Claude account, have your first conversations, and master the four core features: Artifacts, Projects, Connectors, and Skills.",
+      "time_estimate": "~40 min",
+      "objectives": [
+        "Navigate Claude.ai confidently and start productive conversations",
+        "Use Claude as an active thinking partner, not just a Q&A tool",
+        "Create and iterate on Artifacts for documents, code, and interactive content",
+        "Use Projects to maintain persistent context across sessions",
+        "Connect external tools via Connectors and create custom Skills"
+      ],
+      "checklist": [
+        "Sign in to Claude.ai and complete your first conversation",
+        "Try using Claude as a thinking partner on a real problem",
+        "Create one Artifact (document or interactive HTML)",
+        "Set up a Project with a custom instruction",
+        "Create a Skill based on a recurring task you do"
+      ],
+      "topics": [
+        {
+          "id": "s2t1-start",
+          "title": "First Conversations",
+          "description": "Get started with Claude.ai, discover how to use it as a thinking partner, and understand the capabilities of Claude Sonnet.",
+          "videos": [
+            {
+              "id": "s2v1",
               "title": "Getting started with Claude.ai",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=0vZ_UVLhSQQ",
@@ -83,7 +441,61 @@
               }
             },
             {
-              "id": "s1v2",
+              "id": "s2v2",
+              "title": "Turning Claude into your thinking partner",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=VHsp6Hp7Stw",
+              "provider": "youtube",
+              "reason": "Turning Claude into your thinking partner",
+              "level": "Beginner",
+              "duration": "1:26",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-thinking-1",
+                    "question": "What is the key approach for turning Claude into an effective thinking partner?",
+                    "choices": [
+                      "Using Claude only for final polished outputs",
+                      "Engaging Claude in iterative dialogue to explore and refine ideas",
+                      "Asking Claude only yes/no questions",
+                      "Giving Claude very short, simple prompts"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude works best as a thinking partner through iterative dialogue — sharing your reasoning, asking for pushback, and refining ideas together."
+                  },
+                  {
+                    "id": "q-thinking-2",
+                    "question": "How should you treat Claude when working through complex problems?",
+                    "choices": [
+                      "As a search engine for quick answers",
+                      "As a collaborative partner you can think out loud with",
+                      "As a replacement for human colleagues",
+                      "As an automated report generator"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Treating Claude as a collaborative thinking partner — sharing context, asking for different perspectives — leads to much richer outcomes."
+                  },
+                  {
+                    "id": "q-thinking-3",
+                    "question": "What distinguishes using Claude as a thinking partner from using it as a Q&A tool?",
+                    "choices": [
+                      "Thinking partners require paid subscriptions",
+                      "Iterative back-and-forth that develops ideas progressively",
+                      "Providing Claude with no context",
+                      "Asking only factual questions"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "A thinking partner relationship involves ongoing dialogue, sharing context, and building on responses — unlike simple one-off Q&A."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s2v3",
               "title": "Getting the most out of Sonnet 4.5 in Claude.ai",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=PnX30ZXxKco",
@@ -137,12 +549,12 @@
           ]
         },
         {
-          "id": "s1t2-features",
+          "id": "s2t2-features",
           "title": "Core Features",
-          "description": "Master Artifacts, Projects, Connectors, and Skills — the four pillars that transform Claude from a chatbot into a persistent work assistant.",
+          "description": "Master the four pillars of Claude.ai: Artifacts for creating content, Projects for persistent context, Connectors for external tools, and Skills for custom workflows.",
           "videos": [
             {
-              "id": "s1v3",
+              "id": "s2v4",
               "title": "Intro to Artifacts",
               "channel": "Anthropic",
               "url": "https://vimeo.com/1014496079",
@@ -194,7 +606,7 @@
               }
             },
             {
-              "id": "s1v4",
+              "id": "s2v5",
               "title": "Intro to Projects",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=GJ5jTgcbRHA",
@@ -246,7 +658,7 @@
               }
             },
             {
-              "id": "s1v5",
+              "id": "s2v6",
               "title": "Intro to Connectors",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=_jjSS0qGFbI",
@@ -298,7 +710,7 @@
               }
             },
             {
-              "id": "s1v6",
+              "id": "s2v7",
               "title": "How to create a skill with Claude through conversation",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=kS1MJFZWMq4",
@@ -350,7 +762,7 @@
               }
             },
             {
-              "id": "s1v7",
+              "id": "s2v8",
               "title": "Teach Claude your way of working using skills",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=IoqpBKrNaZI",
@@ -406,89 +818,91 @@
       ]
     },
     {
-      "id": "2",
-      "title": "Claude for Work",
-      "summary": "Apply Claude across professional roles — engineering, HR, marketing, product, sales — and boost your everyday productivity.",
-      "time_estimate": "~60 min",
+      "id": "3",
+      "title": "Prompting & Communication",
+      "summary": "Learn the 4D Framework — Delegate, Describe, Discern, Diligence — and master the prompting techniques that separate average users from power users.",
+      "time_estimate": "~50 min",
       "objectives": [
-        "Use Claude to draft, edit, and transform professional content",
-        "Apply Claude to role-specific tasks in your team or department",
-        "Leverage Claude's browsing integration to work faster in Chrome",
-        "Use Sonnet 4.5 capabilities to produce polished outputs across tools"
+        "Apply the 4D Framework to every AI interaction",
+        "Write clear, specific prompts that get the results you need",
+        "Use few-shot prompting and iterative refinement effectively",
+        "Critically evaluate AI outputs and know when to push back"
       ],
       "checklist": [
-        "Identify 3 recurring tasks in your role that Claude can help with",
-        "Use Claude to draft or rewrite a professional document",
-        "Install and test the Claude Chrome extension",
-        "Generate role-specific content (job description, proposal, brief, etc.)"
+        "Memorize the four D's and their definitions",
+        "Rewrite a recent Claude prompt using the Describe best practices",
+        "Try few-shot prompting on a task relevant to your role",
+        "Identify one AI output this week where Discernment saved you from an error"
       ],
       "topics": [
         {
-          "id": "s2t1-roles",
-          "title": "Professional Applications",
-          "description": "Official Anthropic guides showing how Claude accelerates work across the most common business functions.",
+          "id": "s3t1-4d",
+          "title": "The 4D Framework",
+          "description": "Anthropic's structured framework for getting the most from AI: Delegate the right tasks, Describe them clearly, Discern what's useful, and apply Diligence to verify.",
           "videos": [
             {
-              "id": "s2v1",
-              "title": "Claude for Engineering",
+              "id": "s3v1",
+              "title": "Lesson 2B: The 4D Framework",
               "channel": "Anthropic",
-              "url": "https://vimeo.com/1014496779",
-              "provider": "vimeo",
-              "reason": "Official tutorial demonstrating how engineering teams use Claude for code review, debugging, documentation, and onboarding new developers.",
+              "url": "https://www.youtube.com/watch?v=W4Ua6XFfX9w",
+              "provider": "youtube",
+              "reason": "Lesson 2B: The 4D Framework",
               "level": "Regular",
-              "duration": "unknown",
+              "duration": "5:20",
               "views": "unknown",
               "published_date": "unknown",
-              "top_pick": false,
+              "top_pick": true,
               "official": true,
               "quiz": {
                 "questions": [
                   {
-                    "id": "s2v1-q1",
-                    "question": "Which engineering task is Claude particularly effective at?",
+                    "id": "q-4d-1",
+                    "question": "What are the four D's in the 4D Framework?",
                     "choices": [
-                      "Hardware design and circuit testing",
-                      "Code review, debugging, and writing technical documentation",
-                      "Managing physical server infrastructure",
-                      "Building PCB prototypes"
+                      "Design, Develop, Deploy, Debug",
+                      "Delegate, Describe, Discern, Diligence",
+                      "Direct, Draft, Distribute, Document",
+                      "Discover, Define, Deliver, Decide"
                     ],
                     "answerIndex": 1,
-                    "explanation": "Claude excels at software engineering tasks — reviewing code, explaining bugs, suggesting fixes, and drafting clear technical documentation to help teams move faster."
+                    "explanation": "The 4D Framework: Delegate (assign the right tasks), Describe (provide clear context), Discern (critically evaluate), Diligence (verify and take responsibility)."
                   },
                   {
-                    "id": "s2v1-q2",
-                    "question": "True or False: Claude can generate unit tests for existing code.",
+                    "id": "q-4d-2",
+                    "question": "Which D involves providing Claude with clear context and instructions?",
                     "choices": [
-                      "True",
-                      "False"
-                    ],
-                    "answerIndex": 0,
-                    "explanation": "Claude can analyze your code and generate unit tests, propose edge cases, and review test coverage — helping engineering teams ship with more confidence."
-                  },
-                  {
-                    "id": "s2v1-q3",
-                    "question": "How can Claude help onboard new engineers to a large codebase?",
-                    "choices": [
-                      "By automatically granting GitHub repository access",
-                      "By summarizing the codebase and explaining how different parts work",
-                      "By running CI/CD pipelines on their behalf",
-                      "By creating user accounts in internal systems"
+                      "Delegate",
+                      "Describe",
+                      "Discern",
+                      "Diligence"
                     ],
                     "answerIndex": 1,
-                    "explanation": "Claude can read large codebases, explain the purpose of different modules and functions, and answer questions in plain language — dramatically reducing ramp-up time for new developers."
+                    "explanation": "Description involves giving Claude the context, format, tone, and specific details it needs to produce useful output."
+                  },
+                  {
+                    "id": "q-4d-3",
+                    "question": "What does \"Discernment\" help you do in the 4D Framework?",
+                    "choices": [
+                      "Write better prompts",
+                      "Critically evaluate AI outputs and decide what to keep or change",
+                      "Share AI results with colleagues",
+                      "Connect Claude to external tools"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Discernment is the skill of critically evaluating what Claude produces — identifying what's accurate, useful, and where human judgment should take precedence."
                   }
                 ]
               }
             },
             {
-              "id": "s2v2",
-              "title": "Claude for Human Resources",
+              "id": "s3v2",
+              "title": "Lesson 4: A closer look at Delegation",
               "channel": "Anthropic",
-              "url": "https://vimeo.com/1018853549",
-              "provider": "vimeo",
-              "reason": "Demonstrates how HR professionals use Claude to draft job descriptions, analyze surveys, create learning plans, and handle employee communications.",
+              "url": "https://www.youtube.com/watch?v=EljzyfdYkrc",
+              "provider": "youtube",
+              "reason": "Lesson 4: A closer look at Delegation",
               "level": "Regular",
-              "duration": "unknown",
+              "duration": "5:48",
               "views": "unknown",
               "published_date": "unknown",
               "top_pick": false,
@@ -496,51 +910,53 @@
               "quiz": {
                 "questions": [
                   {
-                    "id": "s2v2-q1",
-                    "question": "Which HR task can Claude most effectively assist with?",
+                    "id": "q-delegate-1",
+                    "question": "What does effective Delegation to Claude require?",
                     "choices": [
-                      "Processing payroll and financial transactions",
-                      "Drafting job descriptions, interview questions, and HR communications",
-                      "Managing benefits enrollment systems",
-                      "Automatically scheduling performance review meetings"
+                      "Giving Claude as little information as possible",
+                      "Choosing tasks that match Claude's capabilities and providing clear direction",
+                      "Delegating all tasks without any oversight",
+                      "Only delegating creative writing tasks"
                     ],
                     "answerIndex": 1,
-                    "explanation": "Claude helps HR teams write clear, structured job descriptions, generate relevant interview questions, and draft professional communications quickly."
+                    "explanation": "Effective delegation means identifying tasks Claude is well-suited for and providing enough context and direction for Claude to complete them well."
                   },
                   {
-                    "id": "s2v2-q2",
-                    "question": "True or False: Claude can analyze open-ended employee survey responses and identify key themes.",
+                    "id": "q-delegate-2",
+                    "question": "Which element is most important to specify when delegating a task?",
                     "choices": [
-                      "True",
-                      "False"
-                    ],
-                    "answerIndex": 0,
-                    "explanation": "Claude can process qualitative survey data, identify recurring themes, surface sentiments, and summarize insights — saving HR teams hours of manual analysis."
-                  },
-                  {
-                    "id": "s2v2-q3",
-                    "question": "How can Claude support employee development efforts?",
-                    "choices": [
-                      "By automatically assigning performance ratings",
-                      "By creating personalized learning plans and drafting development feedback",
-                      "By accessing HR databases and updating employee records",
-                      "By managing training platform subscriptions"
+                      "The exact word count you want",
+                      "The goal, context, and expected output format",
+                      "Your personal preferences for font size",
+                      "The number of revisions you plan to make"
                     ],
                     "answerIndex": 1,
-                    "explanation": "Claude can help HR and managers draft personalized development plans, write constructive feedback, and create training materials tailored to individual needs."
+                    "explanation": "Specifying the goal, context, and expected format dramatically improves delegation results."
+                  },
+                  {
+                    "id": "q-delegate-3",
+                    "question": "Which task is a strong candidate for delegating to Claude?",
+                    "choices": [
+                      "Making a critical business decision requiring human accountability",
+                      "Drafting a first version of a document based on notes you provide",
+                      "Accessing private company databases",
+                      "Conducting live video interviews"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Drafting documents is ideal for delegation — Claude handles the heavy lifting while you review, refine, and take accountability for the final version."
                   }
                 ]
               }
             },
             {
-              "id": "s2v3",
-              "title": "Claude for Marketing",
+              "id": "s3v3",
+              "title": "Lesson 6: A closer look at Description",
               "channel": "Anthropic",
-              "url": "https://vimeo.com/1014496083",
-              "provider": "vimeo",
-              "reason": "Shows how marketing teams use Claude to draft and repurpose content, conduct competitive research, and maintain consistent brand voice at scale.",
+              "url": "https://www.youtube.com/watch?v=DmgujoZ1mmk",
+              "provider": "youtube",
+              "reason": "Lesson 6: A closer look at Description",
               "level": "Regular",
-              "duration": "unknown",
+              "duration": "4:21",
               "views": "unknown",
               "published_date": "unknown",
               "top_pick": false,
@@ -548,142 +964,40 @@
               "quiz": {
                 "questions": [
                   {
-                    "id": "s2v3-q1",
-                    "question": "How can Claude help a marketing team increase content output?",
+                    "id": "q-describe-1",
+                    "question": "In the 4D Framework, what does \"Description\" refer to?",
                     "choices": [
-                      "By automatically publishing posts on social media platforms",
-                      "By drafting, editing, and repurposing content across multiple formats",
-                      "By managing advertising campaign budgets",
-                      "By tracking website traffic analytics"
+                      "Writing a description of the Claude interface",
+                      "Providing Claude with clear context, goals, constraints, and format expectations",
+                      "Describing your career background to Claude",
+                      "The process of summarizing Claude's outputs"
                     ],
                     "answerIndex": 1,
-                    "explanation": "Claude can write blog posts, social copy, email campaigns, and repurpose content between formats — dramatically increasing the team's content velocity without sacrificing quality."
+                    "explanation": "Description means giving Claude a thorough brief: what you want, why you need it, what format works best, any constraints, and relevant context."
                   },
                   {
-                    "id": "s2v3-q2",
-                    "question": "True or False: Claude can consistently apply a specific brand voice when creating content.",
+                    "id": "q-describe-2",
+                    "question": "How does providing more context in your prompt improve Claude's responses?",
                     "choices": [
-                      "True",
-                      "False"
-                    ],
-                    "answerIndex": 0,
-                    "explanation": "You can describe your brand's tone and style guidelines to Claude — or save them as a Skill — and it will apply that voice consistently across all content it generates."
-                  },
-                  {
-                    "id": "s2v3-q3",
-                    "question": "Which marketing task is Claude best suited for?",
-                    "choices": [
-                      "Managing influencer relationships",
-                      "Conducting competitive analysis and summarizing market research",
-                      "Processing payment transactions",
-                      "Placing and optimizing ad bids"
+                      "It makes responses shorter",
+                      "It helps Claude understand your intent and tailor output to your specific needs",
+                      "It forces Claude to be more creative",
+                      "It has no meaningful effect on output quality"
                     ],
                     "answerIndex": 1,
-                    "explanation": "Claude can quickly analyze competitor content, summarize lengthy research reports, and surface strategic insights — helping marketing teams stay informed without hours of manual reading."
-                  }
-                ]
-              }
-            },
-            {
-              "id": "s2v4",
-              "title": "Claude for Product Management",
-              "channel": "Anthropic",
-              "url": "https://vimeo.com/1018853967",
-              "provider": "vimeo",
-              "reason": "Covers how product managers use Claude to write PRDs, craft user stories, prepare stakeholder presentations, and improve sprint planning.",
-              "level": "Regular",
-              "duration": "unknown",
-              "views": "unknown",
-              "published_date": "unknown",
-              "top_pick": false,
-              "official": true,
-              "quiz": {
-                "questions": [
-                  {
-                    "id": "s2v4-q1",
-                    "question": "How can Claude help a product manager with requirements writing?",
-                    "choices": [
-                      "By automatically building the product based on requirements",
-                      "By drafting user stories, acceptance criteria, and PRDs from high-level ideas",
-                      "By running user interviews on behalf of the PM",
-                      "By deploying code to production environments"
-                    ],
-                    "answerIndex": 1,
-                    "explanation": "Claude can translate high-level product ideas into structured documents — user stories with clear acceptance criteria, full PRDs, and scope definitions — very quickly."
+                    "explanation": "Context helps Claude understand who you are, what you're trying to achieve, and what constraints apply — leading to more relevant, accurate responses."
                   },
                   {
-                    "id": "s2v4-q2",
-                    "question": "True or False: Claude can help PMs structure and prepare for stakeholder presentations.",
+                    "id": "q-describe-3",
+                    "question": "Which is most important to include when describing a task to Claude?",
                     "choices": [
-                      "True",
-                      "False"
-                    ],
-                    "answerIndex": 0,
-                    "explanation": "Claude can help PMs organize presentation narratives, draft talking points, summarize data for slides, and anticipate stakeholder questions before important meetings."
-                  },
-                  {
-                    "id": "s2v4-q3",
-                    "question": "What is a practical sprint-planning use of Claude?",
-                    "choices": [
-                      "Automatically assigning tasks to engineers",
-                      "Writing clear, well-defined ticket descriptions and flagging ambiguities",
-                      "Tracking time spent on individual tasks",
-                      "Facilitating live stand-up meetings"
+                      "A list of words Claude should never use",
+                      "Your role, goal, and the format you need for the output",
+                      "The exact date and time of your request",
+                      "The names of all team members involved"
                     ],
                     "answerIndex": 1,
-                    "explanation": "Claude helps PMs write precise, unambiguous tickets, break down epics into actionable tasks, and identify gaps in requirements before work begins — reducing back-and-forth with engineering."
-                  }
-                ]
-              }
-            },
-            {
-              "id": "s2v5",
-              "title": "Claude for Sales",
-              "channel": "Anthropic",
-              "url": "https://vimeo.com/1014496068",
-              "provider": "vimeo",
-              "reason": "Illustrates how sales teams use Claude to craft personalized outreach, prepare for objection handling, and produce proposals and follow-up emails faster.",
-              "level": "Regular",
-              "duration": "unknown",
-              "views": "unknown",
-              "published_date": "unknown",
-              "top_pick": false,
-              "official": true,
-              "quiz": {
-                "questions": [
-                  {
-                    "id": "s2v5-q1",
-                    "question": "How can Claude improve a sales team's outreach effectiveness?",
-                    "choices": [
-                      "By automatically sending cold emails to prospect lists",
-                      "By personalizing outreach messages and crafting compelling sales copy",
-                      "By pulling real-time CRM data without any integration",
-                      "By scheduling calls and meetings automatically"
-                    ],
-                    "answerIndex": 1,
-                    "explanation": "Claude helps sales teams write personalized, persuasive outreach tailored to specific prospects, use cases, and industries — improving engagement rates significantly."
-                  },
-                  {
-                    "id": "s2v5-q2",
-                    "question": "True or False: Claude can help sales reps practice handling objections by role-playing as a skeptical customer.",
-                    "choices": [
-                      "True",
-                      "False"
-                    ],
-                    "answerIndex": 0,
-                    "explanation": "You can ask Claude to simulate a skeptical prospect, letting reps practice their objection responses in a low-stakes environment before real customer calls."
-                  },
-                  {
-                    "id": "s2v5-q3",
-                    "question": "Which sales documents can Claude help create?",
-                    "choices": [
-                      "Sales commission calculation spreadsheets",
-                      "Proposals, call scripts, and personalized follow-up emails",
-                      "CRM database schemas",
-                      "Lead scoring algorithms"
-                    ],
-                    "answerIndex": 1,
-                    "explanation": "Claude can draft compelling proposals, structured discovery call scripts, and personalized follow-up emails — helping reps spend more time selling and less time writing."
+                    "explanation": "Describing your role, goal, and desired format are the three most impactful description elements."
                   }
                 ]
               }
@@ -691,18 +1005,538 @@
           ]
         },
         {
-          "id": "s2t2-productivity",
-          "title": "Productivity Boosters",
-          "description": "Use Claude in your browser with the Chrome extension and leverage Sonnet 4.5's strengths to produce polished results across all your work tools.",
+          "id": "s3t2-prompting",
+          "title": "Advanced Prompting",
+          "description": "Deep dive into effective prompting techniques, how to iterate on prompts, and how to apply Discernment to evaluate and improve Claude's outputs.",
           "videos": [
             {
-              "id": "s2v6",
+              "id": "s3v4",
+              "title": "Lesson 7: Effective prompting techniques (Deep Dive)",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=2YCaBqP8muw",
+              "provider": "youtube",
+              "reason": "Lesson 7: Effective prompting techniques (Deep Dive)",
+              "level": "Regular",
+              "duration": "11:54",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-prompt-1",
+                    "question": "What is the most important factor in writing an effective prompt?",
+                    "choices": [
+                      "Using technical jargon",
+                      "Being clear and specific about what you want and why",
+                      "Making the prompt as short as possible",
+                      "Using formal language only"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Clarity and specificity are the foundations of effective prompting. The more precisely you communicate your goal, the better Claude's response."
+                  },
+                  {
+                    "id": "q-prompt-2",
+                    "question": "Which technique involves providing Claude with examples of the output you want?",
+                    "choices": [
+                      "Chain-of-thought prompting",
+                      "Few-shot prompting",
+                      "Zero-shot prompting",
+                      "System prompting"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Few-shot prompting means including one or more examples to show Claude exactly the style, format, or type of output you expect."
+                  },
+                  {
+                    "id": "q-prompt-3",
+                    "question": "What is the best approach when Claude's first response isn't what you needed?",
+                    "choices": [
+                      "Start over with a completely new conversation",
+                      "Refine your prompt with more specific instructions and context",
+                      "Accept the response as-is",
+                      "Switch to a different AI tool"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Prompting is iterative. Provide more context, clarify your intent, or specify what was missing — Claude responds well to follow-up instructions."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s3v5",
+              "title": "Lesson 8: A closer look at Discernment",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=Y0KidGr9Z2Y",
+              "provider": "youtube",
+              "reason": "Lesson 8: A closer look at Discernment",
+              "level": "Regular",
+              "duration": "5:23",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-discern-1",
+                    "question": "What does \"Discernment\" mean in the 4D Framework?",
+                    "choices": [
+                      "The ability to write better prompts",
+                      "Critically evaluating AI outputs to decide what is accurate and useful",
+                      "The speed at which you use AI tools",
+                      "The process of delegating tasks to AI"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Discernment is the capacity to critically assess AI outputs — identifying what's accurate, what needs verification, and where human judgment should override the AI."
+                  },
+                  {
+                    "id": "q-discern-2",
+                    "question": "Why is critical evaluation of AI outputs particularly important?",
+                    "choices": [
+                      "Because AI is always correct",
+                      "Because AI can produce confident-sounding but inaccurate information",
+                      "Because AI outputs are always incomplete",
+                      "Because AI is too conservative in its responses"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI models can generate plausible-sounding incorrect information. Critical evaluation helps catch errors before they cause harm."
+                  },
+                  {
+                    "id": "q-discern-3",
+                    "question": "What should you do when you're unsure if Claude's answer is accurate?",
+                    "choices": [
+                      "Trust it since AI is more reliable than humans",
+                      "Verify with authoritative sources or subject-matter experts",
+                      "Ask Claude the same question again",
+                      "Ignore the response entirely"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "When in doubt, verify AI outputs using reliable external sources or consult domain experts before acting on the information."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s3v6",
+              "title": "Lesson 11: Conclusion",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=ytEN_iAk09c",
+              "provider": "youtube",
+              "reason": "Lesson 11: Conclusion",
+              "level": "Regular",
+              "duration": "5:51",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-conc-1",
+                    "question": "What is the main takeaway from the AI Fluency course?",
+                    "choices": [
+                      "AI will soon replace all knowledge work",
+                      "Effective AI collaboration requires applying the 4D Framework consistently",
+                      "You should avoid AI tools in professional settings",
+                      "AI tools work best with minimal human involvement"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The AI Fluency course teaches that effective AI collaboration is a skill built on the 4D Framework — applied consistently across all tasks."
+                  },
+                  {
+                    "id": "q-conc-2",
+                    "question": "How does the 4D Framework help you work effectively with AI?",
+                    "choices": [
+                      "By automating all your tasks",
+                      "By providing a structured approach to assigning, briefing, evaluating, and verifying AI work",
+                      "By teaching you to code AI models",
+                      "By eliminating the need for human review"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The 4D Framework provides a structured, repeatable process: delegate the right tasks, describe them clearly, discern what's useful, apply diligence to verify."
+                  },
+                  {
+                    "id": "q-conc-3",
+                    "question": "What is the recommended mindset for continuing your AI journey after this course?",
+                    "choices": [
+                      "Learn AI tools once and never change your approach",
+                      "Experiment, reflect, and continuously refine how you collaborate with AI",
+                      "Avoid using AI until it becomes more reliable",
+                      "Use AI only for tasks you already know well"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI Fluency is a continuous practice. The best practitioners experiment with new approaches and adapt as AI tools evolve."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Claude at Work",
+      "summary": "Apply Claude across professional tasks — writing, research, data analysis, document workflows, and role-specific use cases.",
+      "time_estimate": "~95 min",
+      "objectives": [
+        "Use Claude to write, research, and analyze data faster and better",
+        "Automate document workflows: slides, spreadsheets, contracts, Excel",
+        "Identify workflow augmentation opportunities in your own role",
+        "Apply Claude to role-specific tasks in engineering, HR, marketing, product, or sales"
+      ],
+      "checklist": [
+        "Use Claude to draft or rewrite one professional document this week",
+        "Ask Claude to help with a research task and verify its output",
+        "Try Claude on a spreadsheet or Excel formula challenge",
+        "Watch the video for your specific role"
+      ],
+      "topics": [
+        {
+          "id": "s4t1-skills",
+          "title": "Core Professional Skills",
+          "description": "Master writing, researching, analyzing data, and augmenting your workflow with AI — the four skills that apply to every professional role.",
+          "videos": [
+            {
+              "id": "s4v1",
+              "title": "Writing with AI",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=OQzANXIckWo",
+              "provider": "youtube",
+              "reason": "Writing with AI",
+              "level": "Regular",
+              "duration": "7:15",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-write-1",
+                    "question": "What writing tasks can AI tools like Claude assist with most effectively?",
+                    "choices": [
+                      "Only creative fiction",
+                      "Drafting, editing, summarizing, and transforming text across many formats",
+                      "Only technical documentation",
+                      "Only social media posts"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude excels at drafting, editing, summarizing, and transforming written content — from emails and reports to proposals and presentations."
+                  },
+                  {
+                    "id": "q-write-2",
+                    "question": "How should you use AI-generated drafts in your writing process?",
+                    "choices": [
+                      "Publish them directly without review",
+                      "As a starting point that you refine, edit, and personalize",
+                      "Only for internal documents",
+                      "Replace your own writing entirely"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI drafts are best used as a starting point — they handle the heavy lifting while you refine, personalize, and ensure accuracy."
+                  },
+                  {
+                    "id": "q-write-3",
+                    "question": "What is the recommended approach when using AI for professional writing?",
+                    "choices": [
+                      "Copy and paste all AI output without changes",
+                      "Provide clear context and style guidance, then review and personalize the output",
+                      "Use AI only for brainstorming, never for actual writing",
+                      "Ask AI to write without giving it any examples"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Give Claude clear context about tone, audience, and purpose. Then review, edit, and add your personal touch to the final output."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v2",
+              "title": "Researching with AI",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=WB7FArPxgHU",
+              "provider": "youtube",
+              "reason": "Researching with AI",
+              "level": "Regular",
+              "duration": "7:00",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-research-1",
+                    "question": "What is the most effective use of AI for research tasks?",
+                    "choices": [
+                      "Replacing all traditional research methods",
+                      "Synthesizing information, identifying patterns, and generating research frameworks",
+                      "Finding the single correct answer to any question",
+                      "Replacing peer-reviewed academic sources"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI is most valuable in research for synthesizing large amounts of information, identifying connections, and helping structure research frameworks."
+                  },
+                  {
+                    "id": "q-research-2",
+                    "question": "Why is it important to verify AI-provided research information?",
+                    "choices": [
+                      "Because AI intentionally provides false information",
+                      "Because AI may hallucinate facts or have an outdated knowledge cutoff",
+                      "Because AI responses are always too long",
+                      "Because AI only knows about technology topics"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI models can generate plausible but inaccurate citations or facts, and their knowledge has a training cutoff date. Always cross-reference key claims."
+                  },
+                  {
+                    "id": "q-research-3",
+                    "question": "How can you maximize the quality of AI-assisted research?",
+                    "choices": [
+                      "Ask only yes/no questions",
+                      "Provide specific context, ask follow-up questions, and verify key claims",
+                      "Accept all AI outputs as authoritative",
+                      "Avoid using AI for research entirely"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Quality AI research requires specific prompts, iterative follow-up questions, and verification of key claims — treating AI as a collaborator, not an oracle."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v3",
+              "title": "Data analysis with AI",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=Zzn-g8lvLMA",
+              "provider": "youtube",
+              "reason": "Data analysis with AI",
+              "level": "Regular",
+              "duration": "7:10",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-data-1",
+                    "question": "What type of data analysis tasks can Claude assist with effectively?",
+                    "choices": [
+                      "Only statistical modeling in Python",
+                      "Summarizing datasets, identifying trends, generating insights, and structuring reports",
+                      "Only building machine learning models",
+                      "Only data entry and formatting"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can summarize datasets, identify patterns, generate insights, structure reports, and suggest analytical approaches."
+                  },
+                  {
+                    "id": "q-data-2",
+                    "question": "What should you always do after using AI to analyze data?",
+                    "choices": [
+                      "Share it immediately with your entire team",
+                      "Validate key findings against the source data using your own expertise",
+                      "Delete the original data",
+                      "Never question the AI's conclusions"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI-generated data analysis should always be validated against the source data using domain expertise before presenting conclusions."
+                  },
+                  {
+                    "id": "q-data-3",
+                    "question": "How can you use Claude to better understand a complex dataset?",
+                    "choices": [
+                      "Upload raw data and ask Claude to make all decisions",
+                      "Describe the dataset and ask Claude to suggest key questions, patterns, and analysis approaches",
+                      "Ask Claude to fetch data from your database automatically",
+                      "Use Claude only for creating charts"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Describing your dataset and asking Claude to suggest analytical questions and patterns helps structure your analysis effectively."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v4",
+              "title": "Workflow augmentation",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=vjXso6GR8Sk",
+              "provider": "youtube",
+              "reason": "Workflow augmentation",
+              "level": "Regular",
+              "duration": "6:07",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-workflow-1",
+                    "question": "What does \"workflow augmentation\" with AI mean?",
+                    "choices": [
+                      "Replacing your entire workflow with automation",
+                      "Integrating AI into specific steps of your existing processes to improve speed and quality",
+                      "Using AI only for tasks you don't know how to do",
+                      "Eliminating all manual work from your job"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Workflow augmentation means thoughtfully integrating AI into specific parts of existing processes to enhance output quality or speed — without replacing the entire process."
+                  },
+                  {
+                    "id": "q-workflow-2",
+                    "question": "Which types of tasks benefit most from AI workflow augmentation?",
+                    "choices": [
+                      "Tasks requiring 100% human emotional judgment",
+                      "Repetitive, structured tasks or tasks requiring content generation and analysis",
+                      "Tasks involving physical actions",
+                      "Tasks already fully automated by other software"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI augmentation works best for tasks with clear patterns — drafting content, summarizing inputs, analyzing text — where AI handles the heavy lifting."
+                  },
+                  {
+                    "id": "q-workflow-3",
+                    "question": "How should you identify tasks in your workflow suitable for AI augmentation?",
+                    "choices": [
+                      "Randomly select tasks and test AI on them",
+                      "Look for repetitive, time-consuming tasks that involve processing large amounts of information",
+                      "Only choose tasks where errors have no consequences",
+                      "Augment only tasks that other teams have already tested with AI"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Good candidates are repetitive, involve processing or generating content, or take significant time — where AI can provide speed and scale."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "s4t2-docs",
+          "title": "Productivity & Documents",
+          "description": "Use Claude directly in your documents — slides, spreadsheets, Excel, contracts — and in your browser with the Chrome extension.",
+          "videos": [
+            {
+              "id": "s4v5",
+              "title": "Claude works with you on slides, spreadsheets, and contract redlines",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=LpGpwhORWr0",
+              "provider": "youtube",
+              "reason": "Claude works with you on slides, spreadsheets, and contract redlines",
+              "level": "Regular",
+              "duration": "1:39",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-docs-1",
+                    "question": "Which document types can Claude help you work with directly?",
+                    "choices": [
+                      "Only plain text files",
+                      "Slides, spreadsheets, and contract documents",
+                      "Only PDF files",
+                      "Only email drafts"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can work with presentations, spreadsheets, and contracts — helping draft, edit, redline, or analyze content in these common business document types."
+                  },
+                  {
+                    "id": "q-docs-2",
+                    "question": "What is a key benefit of using Claude for contract review?",
+                    "choices": [
+                      "Claude can sign contracts on your behalf",
+                      "Claude can identify key clauses, flag potential issues, and suggest edits quickly",
+                      "Claude can access legal databases automatically",
+                      "Claude can replace your legal team entirely"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can analyze contract text rapidly, highlight important clauses, flag concerns, and suggest language improvements — accelerating review while you maintain final judgment."
+                  },
+                  {
+                    "id": "q-docs-3",
+                    "question": "How does Claude help with spreadsheet tasks?",
+                    "choices": [
+                      "It automatically connects to your spreadsheet software",
+                      "It helps with formulas, data structuring, analysis logic, and generating templates",
+                      "It replaces the need to use spreadsheet software",
+                      "It only reads, never creates spreadsheet content"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can suggest formulas, help structure data, design templates, and analyze spreadsheet logic — even without directly editing the file."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v6",
+              "title": "Claude in Excel: Sample Use Case",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=8ZRTSIRWLu4",
+              "provider": "youtube",
+              "reason": "Claude in Excel: Sample Use Case",
+              "level": "Regular",
+              "duration": "6:01",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-excel-1",
+                    "question": "What does the Claude and Excel use case primarily demonstrate?",
+                    "choices": [
+                      "Claude replacing Excel entirely",
+                      "Using Claude to build, explain, and troubleshoot Excel formulas and analysis",
+                      "Claude automatically opening Excel files",
+                      "Claude sending Excel files by email"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The use case shows how Claude assists with Excel by helping users build complex formulas, understand their logic, and troubleshoot errors."
+                  },
+                  {
+                    "id": "q-excel-2",
+                    "question": "How can Claude help you with Excel formulas?",
+                    "choices": [
+                      "By typing formulas directly into cells",
+                      "By explaining how formulas work, suggesting the right function, and debugging errors",
+                      "By downloading Excel for you",
+                      "By converting all formulas to Python code"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can explain what formulas do in plain language, recommend the right Excel function, and help debug formula errors."
+                  },
+                  {
+                    "id": "q-excel-3",
+                    "question": "What key advantage does using Claude with Excel provide?",
+                    "choices": [
+                      "It eliminates the need to understand Excel",
+                      "It accelerates complex formula creation and analysis that would otherwise require expert knowledge",
+                      "It makes Excel free to use",
+                      "It allows Claude to run macros automatically"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude makes complex Excel functionality more accessible — helping users accomplish in minutes what might otherwise take hours of research."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v7",
               "title": "Simplify your browsing experience with Claude in Chrome",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=IypXvHej9eY",
               "provider": "youtube",
               "reason": "Shows how the Claude Chrome extension lets you summarize, analyze, and interact with web page content without leaving your browser.",
-              "level": "Beginner",
+              "level": "Regular",
               "duration": "unknown",
               "views": "unknown",
               "published_date": "unknown",
@@ -748,7 +1582,7 @@
               }
             },
             {
-              "id": "s2v7",
+              "id": "s4v8",
               "title": "Create professional results across tools with Claude Sonnet 4.5",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=Tdg_lkCMzY0",
@@ -800,35 +1634,301 @@
               }
             }
           ]
+        },
+        {
+          "id": "s4t3-roles",
+          "title": "Role-Specific Guides",
+          "description": "Official Anthropic guides showing how Claude accelerates work across the most common business functions — pick the one most relevant to your role.",
+          "videos": [
+            {
+              "id": "s4v9",
+              "title": "Claude for Engineering",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1014496779",
+              "provider": "vimeo",
+              "reason": "Official tutorial demonstrating how engineering teams use Claude for code review, debugging, documentation, and onboarding new developers.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v1-q1",
+                    "question": "Which engineering task is Claude particularly effective at?",
+                    "choices": [
+                      "Hardware design and circuit testing",
+                      "Code review, debugging, and writing technical documentation",
+                      "Managing physical server infrastructure",
+                      "Building PCB prototypes"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude excels at software engineering tasks — reviewing code, explaining bugs, suggesting fixes, and drafting clear technical documentation to help teams move faster."
+                  },
+                  {
+                    "id": "s2v1-q2",
+                    "question": "True or False: Claude can generate unit tests for existing code.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can analyze your code and generate unit tests, propose edge cases, and review test coverage — helping engineering teams ship with more confidence."
+                  },
+                  {
+                    "id": "s2v1-q3",
+                    "question": "How can Claude help onboard new engineers to a large codebase?",
+                    "choices": [
+                      "By automatically granting GitHub repository access",
+                      "By summarizing the codebase and explaining how different parts work",
+                      "By running CI/CD pipelines on their behalf",
+                      "By creating user accounts in internal systems"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can read large codebases, explain the purpose of different modules and functions, and answer questions in plain language — dramatically reducing ramp-up time for new developers."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v10",
+              "title": "Claude for Human Resources",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1018853549",
+              "provider": "vimeo",
+              "reason": "Demonstrates how HR professionals use Claude to draft job descriptions, analyze surveys, create learning plans, and handle employee communications.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v2-q1",
+                    "question": "Which HR task can Claude most effectively assist with?",
+                    "choices": [
+                      "Processing payroll and financial transactions",
+                      "Drafting job descriptions, interview questions, and HR communications",
+                      "Managing benefits enrollment systems",
+                      "Automatically scheduling performance review meetings"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude helps HR teams write clear, structured job descriptions, generate relevant interview questions, and draft professional communications quickly."
+                  },
+                  {
+                    "id": "s2v2-q2",
+                    "question": "True or False: Claude can analyze open-ended employee survey responses and identify key themes.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can process qualitative survey data, identify recurring themes, surface sentiments, and summarize insights — saving HR teams hours of manual analysis."
+                  },
+                  {
+                    "id": "s2v2-q3",
+                    "question": "How can Claude support employee development efforts?",
+                    "choices": [
+                      "By automatically assigning performance ratings",
+                      "By creating personalized learning plans and drafting development feedback",
+                      "By accessing HR databases and updating employee records",
+                      "By managing training platform subscriptions"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can help HR and managers draft personalized development plans, write constructive feedback, and create training materials tailored to individual needs."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v11",
+              "title": "Claude for Marketing",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1014496083",
+              "provider": "vimeo",
+              "reason": "Shows how marketing teams use Claude to draft and repurpose content, conduct competitive research, and maintain consistent brand voice at scale.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v3-q1",
+                    "question": "How can Claude help a marketing team increase content output?",
+                    "choices": [
+                      "By automatically publishing posts on social media platforms",
+                      "By drafting, editing, and repurposing content across multiple formats",
+                      "By managing advertising campaign budgets",
+                      "By tracking website traffic analytics"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can write blog posts, social copy, email campaigns, and repurpose content between formats — dramatically increasing the team's content velocity without sacrificing quality."
+                  },
+                  {
+                    "id": "s2v3-q2",
+                    "question": "True or False: Claude can consistently apply a specific brand voice when creating content.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "You can describe your brand's tone and style guidelines to Claude — or save them as a Skill — and it will apply that voice consistently across all content it generates."
+                  },
+                  {
+                    "id": "s2v3-q3",
+                    "question": "Which marketing task is Claude best suited for?",
+                    "choices": [
+                      "Managing influencer relationships",
+                      "Conducting competitive analysis and summarizing market research",
+                      "Processing payment transactions",
+                      "Placing and optimizing ad bids"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can quickly analyze competitor content, summarize lengthy research reports, and surface strategic insights — helping marketing teams stay informed without hours of manual reading."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v12",
+              "title": "Claude for Product Management",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1018853967",
+              "provider": "vimeo",
+              "reason": "Covers how product managers use Claude to write PRDs, craft user stories, prepare stakeholder presentations, and improve sprint planning.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v4-q1",
+                    "question": "How can Claude help a product manager with requirements writing?",
+                    "choices": [
+                      "By automatically building the product based on requirements",
+                      "By drafting user stories, acceptance criteria, and PRDs from high-level ideas",
+                      "By running user interviews on behalf of the PM",
+                      "By deploying code to production environments"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can translate high-level product ideas into structured documents — user stories with clear acceptance criteria, full PRDs, and scope definitions — very quickly."
+                  },
+                  {
+                    "id": "s2v4-q2",
+                    "question": "True or False: Claude can help PMs structure and prepare for stakeholder presentations.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can help PMs organize presentation narratives, draft talking points, summarize data for slides, and anticipate stakeholder questions before important meetings."
+                  },
+                  {
+                    "id": "s2v4-q3",
+                    "question": "What is a practical sprint-planning use of Claude?",
+                    "choices": [
+                      "Automatically assigning tasks to engineers",
+                      "Writing clear, well-defined ticket descriptions and flagging ambiguities",
+                      "Tracking time spent on individual tasks",
+                      "Facilitating live stand-up meetings"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude helps PMs write precise, unambiguous tickets, break down epics into actionable tasks, and identify gaps in requirements before work begins — reducing back-and-forth with engineering."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v13",
+              "title": "Claude for Sales",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1014496068",
+              "provider": "vimeo",
+              "reason": "Illustrates how sales teams use Claude to craft personalized outreach, prepare for objection handling, and produce proposals and follow-up emails faster.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v5-q1",
+                    "question": "How can Claude improve a sales team's outreach effectiveness?",
+                    "choices": [
+                      "By automatically sending cold emails to prospect lists",
+                      "By personalizing outreach messages and crafting compelling sales copy",
+                      "By pulling real-time CRM data without any integration",
+                      "By scheduling calls and meetings automatically"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude helps sales teams write personalized, persuasive outreach tailored to specific prospects, use cases, and industries — improving engagement rates significantly."
+                  },
+                  {
+                    "id": "s2v5-q2",
+                    "question": "True or False: Claude can help sales reps practice handling objections by role-playing as a skeptical customer.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "You can ask Claude to simulate a skeptical prospect, letting reps practice their objection responses in a low-stakes environment before real customer calls."
+                  },
+                  {
+                    "id": "s2v5-q3",
+                    "question": "Which sales documents can Claude help create?",
+                    "choices": [
+                      "Sales commission calculation spreadsheets",
+                      "Proposals, call scripts, and personalized follow-up emails",
+                      "CRM database schemas",
+                      "Lead scoring algorithms"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can draft compelling proposals, structured discovery call scripts, and personalized follow-up emails — helping reps spend more time selling and less time writing."
+                  }
+                ]
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "id": "3",
+      "id": "5",
       "title": "Power Features",
-      "summary": "Level up with Claude's Research mode, advanced Artifact capabilities, and powerful file creation and editing tools.",
+      "summary": "Level up with Claude's Research mode, advanced Artifact capabilities, and file creation and batch-processing tools.",
       "time_estimate": "~75 min",
       "objectives": [
-        "Use Claude's Research feature to synthesize information from multiple sources",
+        "Use Research mode to synthesize information from multiple sources",
         "Combine Research with Google Workspace for internal + external intelligence",
         "Build interactive apps and visualizations using Artifacts",
         "Create, edit, and batch-process files to eliminate manual work"
       ],
       "checklist": [
         "Run a Research query on a complex professional question",
-        "Ask Claude to compare web research with an internal document",
-        "Build an interactive Artifact (calculator, dashboard, or form)",
+        "Build one interactive Artifact (calculator, dashboard, or form)",
         "Upload multiple files and apply a consistent transformation",
         "Generate a structured report from raw data"
       ],
       "topics": [
         {
-          "id": "s3t1-research",
-          "title": "Research & Artifacts",
-          "description": "Explore Claude's agentic research capabilities and its ability to build interactive tools and AI-powered apps using Artifacts.",
+          "id": "s5t1-research",
+          "title": "Research",
+          "description": "Explore Claude's agentic research capabilities and how to combine them with Google Workspace for powerful internal and external intelligence.",
           "videos": [
             {
-              "id": "s3v1",
+              "id": "s5v1",
               "title": "Using Research",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=R-KJgjIrh24",
@@ -880,7 +1980,7 @@
               }
             },
             {
-              "id": "s3v2",
+              "id": "s5v2",
               "title": "Using Research and Google Workspace",
               "channel": "Anthropic",
               "url": "https://vimeo.com/1076192112/752c4d2b80",
@@ -930,9 +2030,16 @@
                   }
                 ]
               }
-            },
+            }
+          ]
+        },
+        {
+          "id": "s5t2-artifacts",
+          "title": "Advanced Artifacts",
+          "description": "Go beyond text Artifacts — build interactive apps, dashboards, calculators, and visualizations without writing a single line of code.",
+          "videos": [
             {
-              "id": "s3v3",
+              "id": "s5v3",
               "title": "Use Artifacts to visualize and create AI apps without writing code",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=iSn77jvjojA",
@@ -984,7 +2091,7 @@
               }
             },
             {
-              "id": "s3v4",
+              "id": "s5v4",
               "title": "Prototype AI-Powered Apps with Claude Artifacts",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=PBxwtabGltc",
@@ -1038,12 +2145,12 @@
           ]
         },
         {
-          "id": "s3t2-files",
+          "id": "s5t3-files",
           "title": "Files & Documents",
-          "description": "Master Claude's file creation and editing capabilities — from generating reports out of raw data to batch-processing documents in bulk.",
+          "description": "Master Claude's file creation and batch-editing capabilities — from generating reports out of raw data to processing multiple documents at once.",
           "videos": [
             {
-              "id": "s3v5",
+              "id": "s5v5",
               "title": "Create and edit files with Claude to eliminate hours of busy work",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=EV89Ws8Ui9Y",
@@ -1095,7 +2202,7 @@
               }
             },
             {
-              "id": "s3v6",
+              "id": "s5v6",
               "title": "Creating a report from survey data",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=uNyRQW5qCcE",
@@ -1147,7 +2254,7 @@
               }
             },
             {
-              "id": "s3v7",
+              "id": "s5v7",
               "title": "Batch editing across multiple file types",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=YKBn5gj923s",
@@ -1199,7 +2306,7 @@
               }
             },
             {
-              "id": "s3v8",
+              "id": "s5v8",
               "title": "Consolidate scattered inputs into spreadsheets",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=j-OeEBL7iB8",
@@ -1255,31 +2362,28 @@
       ]
     },
     {
-      "id": "4",
-      "title": "Integrations & Specializations",
-      "summary": "Connect Claude to your entire toolstack and explore specialized applications for finance, integrations, and advanced connector workflows.",
-      "time_estimate": "~80 min",
+      "id": "6",
+      "title": "Integrations & Ecosystem",
+      "summary": "Connect Claude to your entire tool stack — Microsoft 365, Google Docs, GitHub, and project management tools — and automate complex multi-tool workflows.",
+      "time_estimate": "~40 min",
       "objectives": [
-        "Connect Claude to GitHub, Google Docs, and other tools via Connectors",
-        "Automate connector-based workflows for release notes and creative content",
-        "Apply Claude to financial research, modeling, and investment memos",
-        "Build dynamic financial models with Claude-generated structures and formulas"
+        "Connect Claude to Microsoft 365, GitHub, and Google Docs via Connectors",
+        "Understand what effective AI integration requires at an organizational level",
+        "Automate connector-driven workflows for release notes, designs, and reports"
       ],
       "checklist": [
-        "Enable at least two Connectors (GitHub, Google Docs, or other)",
-        "Generate a connector-driven workflow output (release notes or design brief)",
-        "Conduct a research query combining web and internal document sources",
-        "Build or review a financial model with Claude",
-        "Draft an investment research summary from a company document"
+        "Enable at least two Connectors (GitHub, Google Docs, or Microsoft 365)",
+        "Generate one connector-driven workflow output",
+        "Identify one process in your team that could benefit from AI integration"
       ],
       "topics": [
         {
-          "id": "s4t1-connectors",
-          "title": "Tools & Integrations",
-          "description": "Deep-dive into Claude's Connector ecosystem: GitHub, Google Docs, and project management integrations that bring Claude into your existing workflows.",
+          "id": "s6t1-connectors",
+          "title": "Connectors & Integrations",
+          "description": "Deep-dive into Claude's Connector ecosystem: Microsoft 365, GitHub, Google Docs, and project management integrations that bring Claude into your existing workflows.",
           "videos": [
             {
-              "id": "s4v1",
+              "id": "s6v1",
               "title": "Connect your tools to unlock a smarter, more capable AI companion",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=4PtGWgEO0ME",
@@ -1331,14 +2435,14 @@
               }
             },
             {
-              "id": "s4v2",
-              "title": "Generating release notes from project management tools",
+              "id": "s6v2",
+              "title": "Connect Claude to Microsoft 365",
               "channel": "Anthropic",
-              "url": "https://www.youtube.com/watch?v=xBV60h9_lbw",
+              "url": "https://www.youtube.com/watch?v=QTfoYDzqXn0",
               "provider": "youtube",
-              "reason": "Practical connector workflow: Claude reads completed tickets from your project management tool and automatically generates structured, audience-appropriate release notes.",
+              "reason": "Connect Claude to Microsoft 365",
               "level": "Regular",
-              "duration": "unknown",
+              "duration": "0:39",
               "views": "unknown",
               "published_date": "unknown",
               "top_pick": false,
@@ -1346,96 +2450,46 @@
               "quiz": {
                 "questions": [
                   {
-                    "id": "s4v2-q1",
-                    "question": "How does Claude use project management tool data to create release notes?",
+                    "id": "q-ms365-1",
+                    "question": "What does connecting Claude to Microsoft 365 primarily enable?",
                     "choices": [
-                      "By publishing directly to your website",
-                      "By reading completed tickets and transforming them into structured, readable release notes",
-                      "By scheduling releases on your behalf",
-                      "By creating new JIRA tickets automatically"
+                      "Replacing all Microsoft 365 applications",
+                      "Working with Word, Excel, Outlook, and other M365 content directly within Claude",
+                      "Automatically submitting all documents",
+                      "Giving Claude access to OneDrive files without permission"
                     ],
                     "answerIndex": 1,
-                    "explanation": "With a project management Connector, Claude reads the completed work items from your sprint or release cycle and converts them into polished release notes automatically."
+                    "explanation": "The Microsoft 365 integration allows Claude to work with content from Word, Excel, Outlook, and other M365 applications — bringing AI into your existing Microsoft workflow."
                   },
                   {
-                    "id": "s4v2-q2",
-                    "question": "True or False: Claude can generate the same release content in both a technical version for engineers and a simplified version for business stakeholders.",
+                    "id": "q-ms365-2",
+                    "question": "What is the primary benefit of the Microsoft 365 integration?",
                     "choices": [
-                      "True",
-                      "False"
-                    ],
-                    "answerIndex": 0,
-                    "explanation": "Claude can adapt the same source information for different audiences — detailed technical notes for engineers and high-level, non-technical summaries for product and business leaders."
-                  },
-                  {
-                    "id": "s4v2-q3",
-                    "question": "What is the main time-saving benefit of this automated release notes workflow?",
-                    "choices": [
-                      "It eliminates the need for a project manager entirely",
-                      "It removes the manual task of reading every ticket and writing summaries",
-                      "It speeds up software deployment and testing",
-                      "It automatically tests new features before release"
+                      "It makes Microsoft 365 free",
+                      "It allows you to get AI assistance on M365 content without copy-pasting between applications",
+                      "It replaces Microsoft Teams",
+                      "It automatically backs up all your files"
                     ],
                     "answerIndex": 1,
-                    "explanation": "The biggest saving is eliminating the manual work of reading every ticket, extracting what's relevant, and writing readable summaries — Claude handles all of this from the connected data."
+                    "explanation": "The integration eliminates copy-pasting between applications — you can work with M365 content directly in Claude, saving time and reducing friction."
+                  },
+                  {
+                    "id": "q-ms365-3",
+                    "question": "What should you be mindful of when using the Microsoft 365 integration?",
+                    "choices": [
+                      "Never use it for any work tasks",
+                      "Data privacy — only connect files and data that comply with your organization's policies",
+                      "Only use it for personal files",
+                      "The integration only works on Windows computers"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "When connecting external tools to Claude, always ensure the data complies with your organization's data privacy and security policies."
                   }
                 ]
               }
             },
             {
-              "id": "s4v3",
-              "title": "Creating professional designs from existing content",
-              "channel": "Anthropic",
-              "url": "https://www.youtube.com/watch?v=wXC2u36w2Rc",
-              "provider": "youtube",
-              "reason": "Connector workflow showing how Claude transforms raw content from connected tools into structured design briefs, creative specifications, and polished materials.",
-              "level": "Regular",
-              "duration": "unknown",
-              "views": "unknown",
-              "published_date": "unknown",
-              "top_pick": false,
-              "official": true,
-              "quiz": {
-                "questions": [
-                  {
-                    "id": "s4v3-q1",
-                    "question": "How does Claude assist with creating professional design materials?",
-                    "choices": [
-                      "By generating images and graphics directly",
-                      "By structuring content, writing copy, and producing design briefs or creative specifications",
-                      "By using Photoshop plugins",
-                      "By creating vector illustrations"
-                    ],
-                    "answerIndex": 1,
-                    "explanation": "Claude's role in design workflows is content and structure — it writes compelling copy, drafts design briefs with clear objectives, and produces specifications that designers or design tools can act on."
-                  },
-                  {
-                    "id": "s4v3-q2",
-                    "question": "True or False: Claude can convert rough meeting notes into a formatted creative design brief.",
-                    "choices": [
-                      "True",
-                      "False"
-                    ],
-                    "answerIndex": 0,
-                    "explanation": "Claude can take rough notes or verbal requirements and structure them into a professional creative brief complete with objectives, audience, messaging, and content guidelines."
-                  },
-                  {
-                    "id": "s4v3-q3",
-                    "question": "What connector workflow does this video demonstrate?",
-                    "choices": [
-                      "Uploading designs automatically to social media",
-                      "Pulling content from connected tools and transforming it into polished creative materials",
-                      "Generating images directly from text prompts",
-                      "Managing design file version history"
-                    ],
-                    "answerIndex": 1,
-                    "explanation": "The workflow is: content lives in a connected tool → Claude retrieves it via Connector → Claude transforms it into professional creative materials ready for designers or direct use."
-                  }
-                ]
-              }
-            },
-            {
-              "id": "s4v4",
+              "id": "s6v3",
               "title": "Using the GitHub integration",
               "channel": "Anthropic",
               "url": "https://vimeo.com/1014496696",
@@ -1487,7 +2541,7 @@
               }
             },
             {
-              "id": "s4v5",
+              "id": "s6v4",
               "title": "Using the Google Docs integration",
               "channel": "Anthropic",
               "url": "https://vimeo.com/1045796503",
@@ -1537,16 +2591,612 @@
                   }
                 ]
               }
+            },
+            {
+              "id": "s6v5",
+              "title": "Integration",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=rl8lEM-uyrQ",
+              "provider": "youtube",
+              "reason": "Integration",
+              "level": "Regular",
+              "duration": "5:17",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-integration-1",
+                    "question": "What does effective AI integration in an organization require?",
+                    "choices": [
+                      "Replacing all existing tools with AI immediately",
+                      "A thoughtful approach that aligns AI capabilities with existing workflows and needs",
+                      "Buying the most expensive AI products",
+                      "Implementing AI without involving end users"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Effective AI integration requires identifying where AI genuinely adds value, aligning it with existing processes, and involving the people who will use it."
+                  },
+                  {
+                    "id": "q-integration-2",
+                    "question": "How should teams approach integrating AI into their existing workflows?",
+                    "choices": [
+                      "Replace all processes with AI-driven automation immediately",
+                      "Start with specific, high-value use cases and gradually expand based on results",
+                      "Avoid any integration until AI is 100% reliable",
+                      "Let only IT teams decide where AI is used"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Starting with targeted, high-value use cases allows teams to learn what works, build confidence, and expand AI integration sustainably."
+                  },
+                  {
+                    "id": "q-integration-3",
+                    "question": "What is a key consideration when integrating AI tools at scale?",
+                    "choices": [
+                      "Speed of deployment above all else",
+                      "Change management, training, and governance to ensure responsible use",
+                      "Ensuring AI makes all decisions autonomously",
+                      "Minimizing human oversight to maximize efficiency"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Scaling AI integration requires strong change management, proper training, and governance frameworks that ensure AI is used responsibly and effectively."
+                  }
+                ]
+              }
             }
           ]
         },
         {
-          "id": "s4t2-finance",
-          "title": "Financial Services",
-          "description": "Advanced use cases for finance professionals: research, modeling, and investment memo workflows that dramatically accelerate analytical work.",
+          "id": "s6t2-workflows",
+          "title": "Workflow Automation",
+          "description": "Use integrations to automate real workflows: generating release notes from project management tools and creating designs from existing content.",
           "videos": [
             {
-              "id": "s4v6",
+              "id": "s6v6",
+              "title": "Generating release notes from project management tools",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=xBV60h9_lbw",
+              "provider": "youtube",
+              "reason": "Practical connector workflow: Claude reads completed tickets from your project management tool and automatically generates structured, audience-appropriate release notes.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v2-q1",
+                    "question": "How does Claude use project management tool data to create release notes?",
+                    "choices": [
+                      "By publishing directly to your website",
+                      "By reading completed tickets and transforming them into structured, readable release notes",
+                      "By scheduling releases on your behalf",
+                      "By creating new JIRA tickets automatically"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "With a project management Connector, Claude reads the completed work items from your sprint or release cycle and converts them into polished release notes automatically."
+                  },
+                  {
+                    "id": "s4v2-q2",
+                    "question": "True or False: Claude can generate the same release content in both a technical version for engineers and a simplified version for business stakeholders.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can adapt the same source information for different audiences — detailed technical notes for engineers and high-level, non-technical summaries for product and business leaders."
+                  },
+                  {
+                    "id": "s4v2-q3",
+                    "question": "What is the main time-saving benefit of this automated release notes workflow?",
+                    "choices": [
+                      "It eliminates the need for a project manager entirely",
+                      "It removes the manual task of reading every ticket and writing summaries",
+                      "It speeds up software deployment and testing",
+                      "It automatically tests new features before release"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The biggest saving is eliminating the manual work of reading every ticket, extracting what's relevant, and writing readable summaries — Claude handles all of this from the connected data."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s6v7",
+              "title": "Creating professional designs from existing content",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=wXC2u36w2Rc",
+              "provider": "youtube",
+              "reason": "Connector workflow showing how Claude transforms raw content from connected tools into structured design briefs, creative specifications, and polished materials.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v3-q1",
+                    "question": "How does Claude assist with creating professional design materials?",
+                    "choices": [
+                      "By generating images and graphics directly",
+                      "By structuring content, writing copy, and producing design briefs or creative specifications",
+                      "By using Photoshop plugins",
+                      "By creating vector illustrations"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude's role in design workflows is content and structure — it writes compelling copy, drafts design briefs with clear objectives, and produces specifications that designers or design tools can act on."
+                  },
+                  {
+                    "id": "s4v3-q2",
+                    "question": "True or False: Claude can convert rough meeting notes into a formatted creative design brief.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can take rough notes or verbal requirements and structure them into a professional creative brief complete with objectives, audience, messaging, and content guidelines."
+                  },
+                  {
+                    "id": "s4v3-q3",
+                    "question": "What connector workflow does this video demonstrate?",
+                    "choices": [
+                      "Uploading designs automatically to social media",
+                      "Pulling content from connected tools and transforming it into polished creative materials",
+                      "Generating images directly from text prompts",
+                      "Managing design file version history"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The workflow is: content lives in a connected tool → Claude retrieves it via Connector → Claude transforms it into professional creative materials ready for designers or direct use."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Claude Code",
+      "summary": "Meet Claude Code — Anthropic's agentic coding tool. Learn what it is, how it differs from Claude.ai, and how to create, configure, share, and troubleshoot skills.",
+      "time_estimate": "~30 min",
+      "objectives": [
+        "Understand what Claude Code is and how it differs from Claude.ai",
+        "Understand what Claude Code skills are and why they matter",
+        "Create your first skill and invoke it in a session",
+        "Configure multi-file skills and share them with your team",
+        "Troubleshoot common skill issues"
+      ],
+      "checklist": [
+        "Watch \"Claude Code on the web\" to understand the tool",
+        "Create a simple skill for a task you do repeatedly",
+        "Share a skill with at least one colleague",
+        "Test a skill and fix one issue using the troubleshooting video"
+      ],
+      "topics": [
+        {
+          "id": "s7t1-cc-intro",
+          "title": "Introduction to Claude Code",
+          "description": "Understand what Claude Code is, how it works on the web, what skills are, and how they compare to other Claude Code features.",
+          "videos": [
+            {
+              "id": "s7v1",
+              "title": "Claude Code on the web",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=s-avRazvmLg",
+              "provider": "youtube",
+              "reason": "Claude Code on the web",
+              "level": "Regular",
+              "duration": "1:01",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-ccweb-1",
+                    "question": "What does \"Claude Code on the web\" allow you to do?",
+                    "choices": [
+                      "Access Claude only through a mobile app",
+                      "Use Claude's agentic coding capabilities directly in your web browser",
+                      "Download Claude to your local computer",
+                      "Run Claude Code offline without internet"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude Code on the web brings Claude's coding capabilities to the browser — enabling software development workflows without a local terminal installation."
+                  },
+                  {
+                    "id": "q-ccweb-2",
+                    "question": "How does Claude Code differ from the standard Claude.ai chat interface?",
+                    "choices": [
+                      "Claude Code is only for design tasks",
+                      "Claude Code is specialized for software development with tools to read, write, and execute code",
+                      "Claude Code doesn't support conversation",
+                      "Claude Code is identical to Claude.ai"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude Code goes beyond conversation — it can read and write files, run commands, manage codebases, and take agentic actions to complete software development tasks end-to-end."
+                  },
+                  {
+                    "id": "q-ccweb-3",
+                    "question": "What types of coding tasks is Claude Code best suited for?",
+                    "choices": [
+                      "Only writing CSS styles",
+                      "Code generation, debugging, refactoring, writing tests, and codebase navigation",
+                      "Only building mobile apps",
+                      "Only data science tasks"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude Code excels at a broad range of software tasks: writing new code, debugging, refactoring, generating tests, explaining codebases, and more."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s7v2",
+              "title": "What are skills?",
+              "channel": "Claude",
+              "url": "https://www.youtube.com/watch?v=bjdBVZa66oU",
+              "provider": "youtube",
+              "reason": "What are skills?",
+              "level": "Regular",
+              "duration": "2:54",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-skills-what-1",
+                    "question": "In Claude Code, what is a \"skill\"?",
+                    "choices": [
+                      "A certification you earn after completing training",
+                      "A reusable, pre-defined instruction set that teaches Claude how to perform a specific task",
+                      "A Claude.ai Projects feature",
+                      "A type of Artifact"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "In Claude Code, skills are reusable instruction sets stored as files that define how Claude should approach specific tasks — like a specialized tool you can invoke by name."
+                  },
+                  {
+                    "id": "q-skills-what-2",
+                    "question": "What is the main purpose of creating skills in Claude Code?",
+                    "choices": [
+                      "To make Claude Code more expensive",
+                      "To standardize and reuse complex instructions across multiple projects and sessions",
+                      "To limit what Claude Code can do",
+                      "To replace writing code entirely"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Skills let you define complex instructions once and reuse them across projects — ensuring consistency and saving time compared to re-explaining workflows every session."
+                  },
+                  {
+                    "id": "q-skills-what-3",
+                    "question": "How do skills help you work more efficiently with Claude Code?",
+                    "choices": [
+                      "They run code automatically without any input",
+                      "They eliminate the need to repeat detailed instructions, making workflows faster and more consistent",
+                      "They give Claude internet access",
+                      "They connect Claude to external APIs automatically"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Skills remove the need to repeatedly type out the same detailed instructions — define a workflow once, then invoke it by name whenever you need it."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s7v3",
+              "title": "How skills compare to other Claude Code features",
+              "channel": "Claude",
+              "url": "https://www.youtube.com/watch?v=IgNN4v0BJdU",
+              "provider": "youtube",
+              "reason": "How skills compare to other Claude Code features",
+              "level": "Regular",
+              "duration": "3:01",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-skills-compare-1",
+                    "question": "How do skills differ from regular conversational prompts in Claude Code?",
+                    "choices": [
+                      "Skills are shorter than prompts",
+                      "Skills are persistent, reusable files while prompts are one-time conversational inputs",
+                      "Skills only work once",
+                      "There is no difference between skills and prompts"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Skills are stored as files that persist across sessions and can be reused repeatedly, while prompts are conversational inputs that need to be re-typed each time."
+                  },
+                  {
+                    "id": "q-skills-compare-2",
+                    "question": "When should you create a skill rather than using a regular Claude Code prompt?",
+                    "choices": [
+                      "For one-off tasks you'll never repeat",
+                      "For complex, recurring workflows that you want to standardize and reuse",
+                      "When your prompts are very short",
+                      "When you want Claude to forget the instructions after each use"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Create a skill when you have a complex workflow you'll run repeatedly — turning instructions into a reusable skill saves time and ensures consistent results."
+                  },
+                  {
+                    "id": "q-skills-compare-3",
+                    "question": "What advantage do skills have over writing instructions each time?",
+                    "choices": [
+                      "Skills are always faster than typed prompts",
+                      "Skills provide consistency, reusability, and can be shared across a team",
+                      "Skills cost less to use",
+                      "Skills bypass Claude's safety guidelines"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Skills ensure consistent results from the same workflow, can be reused without re-typing, and shared with teammates — creating a library of proven instructions."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "s7t2-cc-skills",
+          "title": "Building with Skills",
+          "description": "Create, configure, share, and troubleshoot Claude Code skills — turning repetitive workflows into reusable, team-shareable tools.",
+          "videos": [
+            {
+              "id": "s7v4",
+              "title": "Creating your first skill",
+              "channel": "Claude",
+              "url": "https://www.youtube.com/watch?v=Wx6_vjFFyHM",
+              "provider": "youtube",
+              "reason": "Creating your first skill",
+              "level": "Regular",
+              "duration": "3:47",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-skills-create-1",
+                    "question": "What is the first step to creating a skill in Claude Code?",
+                    "choices": [
+                      "Installing a plugin",
+                      "Creating a skill file (e.g., in .claude/skills/) that describes the task and its steps",
+                      "Asking Claude to generate a skill automatically",
+                      "Purchasing a Claude Code subscription"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Creating a skill starts with defining a skill file — typically in a .claude/skills/ directory — that describes what the skill does and the steps Claude should follow."
+                  },
+                  {
+                    "id": "q-skills-create-2",
+                    "question": "What makes a well-written skill definition?",
+                    "choices": [
+                      "Being as vague as possible so Claude has flexibility",
+                      "Clear, specific instructions with context about the task's goal, steps, and expected output",
+                      "Using only code, no natural language",
+                      "Limiting the skill to a single sentence"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Good skill definitions are clear and specific — they explain the task's purpose, list the steps to follow, specify the expected output format, and provide necessary context."
+                  },
+                  {
+                    "id": "q-skills-create-3",
+                    "question": "After creating a skill file, how do you use it in a Claude Code session?",
+                    "choices": [
+                      "Claude detects and runs it automatically",
+                      "You invoke the skill by name or reference in your conversation with Claude Code",
+                      "You must restart your computer first",
+                      "You email the skill to Anthropic for activation"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Once defined, invoke the skill by referring to it by name in your Claude Code session — Claude will then follow the skill's defined instructions."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s7v5",
+              "title": "Configuration and multi-file skills",
+              "channel": "Claude",
+              "url": "https://www.youtube.com/watch?v=98KaK_rn5rQ",
+              "provider": "youtube",
+              "reason": "Configuration and multi-file skills",
+              "level": "Regular",
+              "duration": "4:04",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-skills-config-1",
+                    "question": "What does skill configuration in Claude Code allow you to customize?",
+                    "choices": [
+                      "The color of the Claude Code interface",
+                      "Parameters, behavior, and context specific to each skill",
+                      "The programming language Claude uses",
+                      "The number of tokens Claude generates"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Skill configuration lets you define parameters and settings specific to each skill — enabling the same skill to be adapted for different contexts."
+                  },
+                  {
+                    "id": "q-skills-config-2",
+                    "question": "What is the advantage of using multi-file skills in Claude Code?",
+                    "choices": [
+                      "They run faster than single-file skills",
+                      "They allow complex workflows to be broken into modular, maintainable components",
+                      "They require less disk space",
+                      "They are the only way to share skills with others"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Multi-file skills let you organize complex workflows into modular components — each file handling a specific part — making skills easier to maintain and understand."
+                  },
+                  {
+                    "id": "q-skills-config-3",
+                    "question": "How do you organize skills across multiple files in Claude Code?",
+                    "choices": [
+                      "Store all skills in a single text document",
+                      "Create a structured directory (e.g., .claude/skills/) with separate files for each skill or component",
+                      "Email skill files to your team members",
+                      "Store skills only in environment variables"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Organizing skills in a structured directory with separate files keeps your workflow library clean, navigable, and maintainable."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s7v6",
+              "title": "Sharing skills",
+              "channel": "Claude",
+              "url": "https://www.youtube.com/watch?v=OCBi3eScNLk",
+              "provider": "youtube",
+              "reason": "Sharing skills",
+              "level": "Regular",
+              "duration": "3:53",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-skills-share-1",
+                    "question": "How can you share a skill with your team in Claude Code?",
+                    "choices": [
+                      "Skills cannot be shared between users",
+                      "By committing skill files to a shared code repository (e.g., Git)",
+                      "By emailing Anthropic support",
+                      "By using a special export button in Claude Code"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Since skills are files, they can be shared through version control systems like Git — committing them to a shared repository makes them available to the whole team."
+                  },
+                  {
+                    "id": "q-skills-share-2",
+                    "question": "What should you include when sharing a skill with colleagues?",
+                    "choices": [
+                      "Only the skill file name",
+                      "The skill file, a description of what it does, how to invoke it, and any prerequisites",
+                      "Your API key",
+                      "Only the commands it uses"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Shared skills should include the skill file itself, documentation on what it does, how to invoke it, and setup requirements."
+                  },
+                  {
+                    "id": "q-skills-share-3",
+                    "question": "What is the primary benefit of sharing skills across a team?",
+                    "choices": [
+                      "It reduces the cost of Claude subscriptions",
+                      "It creates a shared library of proven workflows, ensuring consistency across the team",
+                      "It makes Claude faster for everyone",
+                      "It gives all team members admin access"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "A shared skill library ensures all team members benefit from proven, tested workflows — reducing duplication and spreading best practices."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s7v7",
+              "title": "Troubleshooting skills",
+              "channel": "Claude",
+              "url": "https://www.youtube.com/watch?v=YBa1cwaG7is",
+              "provider": "youtube",
+              "reason": "Troubleshooting skills",
+              "level": "Regular",
+              "duration": "3:37",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-skills-trouble-1",
+                    "question": "What is the most common reason a Claude Code skill fails to work as expected?",
+                    "choices": [
+                      "The skill file is too large",
+                      "Unclear or ambiguous instructions in the skill definition",
+                      "Claude Code is offline",
+                      "The skill has too many steps"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Most skill failures stem from unclear or ambiguous instructions. Clarity in the skill definition is critical for consistent results."
+                  },
+                  {
+                    "id": "q-skills-trouble-2",
+                    "question": "How should you debug a skill that produces unexpected results?",
+                    "choices": [
+                      "Delete the skill and start from scratch immediately",
+                      "Test individual steps, add more specificity, and iterate on the skill definition",
+                      "Report the issue to Anthropic support only",
+                      "Blame the model and switch to a different AI tool"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Debug skills by breaking them down — test individual steps in isolation, add more specific instructions where Claude's behavior diverges, and iterate until the skill works correctly."
+                  },
+                  {
+                    "id": "q-skills-trouble-3",
+                    "question": "What should you check first when a skill doesn't execute properly?",
+                    "choices": [
+                      "The color theme of your code editor",
+                      "The skill file syntax, its location in the directory, and whether instructions are clear",
+                      "Whether you have the latest version of macOS",
+                      "The number of tokens in your conversation"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Start troubleshooting by checking the basics: is the skill file correctly formatted, in the right location, and do the instructions clearly describe what Claude should do?"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Specializations",
+      "summary": "Explore specialized applications: financial services modeling, AI fluency for nonprofits, and guidance on taking your AI skills forward.",
+      "time_estimate": "~65 min",
+      "objectives": [
+        "Apply Claude to advanced financial research, modeling, and investment memos",
+        "Understand how AI Fluency applies in nonprofit and mission-driven contexts",
+        "Create a personal action plan for continuing your AI journey"
+      ],
+      "checklist": [
+        "Complete the specialization track most relevant to your role",
+        "Define three specific ways you will apply Claude in your work next week",
+        "Share one insight from this training with a colleague"
+      ],
+      "topics": [
+        {
+          "id": "s8t1-finance",
+          "title": "Financial Services",
+          "description": "Advanced use cases for finance professionals: investment research, analysis, financial modeling, and investment memo workflows.",
+          "videos": [
+            {
+              "id": "s8v1",
               "title": "Using Claude for Financial Services — investment research",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=XhVdy2ZwI_Y",
@@ -1598,7 +3248,7 @@
               }
             },
             {
-              "id": "s4v7",
+              "id": "s8v2",
               "title": "Using Claude for Financial Services — analysis and modeling",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=mIogn8Q4VFk",
@@ -1650,7 +3300,7 @@
               }
             },
             {
-              "id": "s4v8",
+              "id": "s8v3",
               "title": "Building a dynamic financial model",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=RB0JQUF2eB4",
@@ -1702,7 +3352,7 @@
               }
             },
             {
-              "id": "s4v9",
+              "id": "s8v4",
               "title": "Using Claude for Financial Services — investment memos",
               "channel": "Anthropic",
               "url": "https://www.youtube.com/watch?v=jjdAf3eWZYg",
@@ -1749,6 +3399,182 @@
                     ],
                     "answerIndex": 1,
                     "explanation": "Writing a memo from scratch is time-consuming. Claude produces a structured, well-written first draft quickly from your raw research — letting analysts focus on refining substance and accuracy rather than formatting."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "s8t2-nonprofit",
+          "title": "AI Fluency for Nonprofits",
+          "description": "How the 4D Framework and AI Fluency principles apply specifically to mission-driven organizations handling beneficiary data and complex stakeholder relationships.",
+          "videos": [
+            {
+              "id": "s8v5",
+              "title": "Welcome to AI Fluency for nonprofits",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=qrhPJNbRT-Q",
+              "provider": "youtube",
+              "reason": "Welcome to AI Fluency for nonprofits",
+              "level": "Regular",
+              "duration": "3:32",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-np-welcome-1",
+                    "question": "What is the goal of the AI Fluency for Nonprofits program?",
+                    "choices": [
+                      "To replace nonprofit staff with AI systems",
+                      "To help nonprofit professionals use AI effectively to amplify their mission impact",
+                      "To sell AI products to nonprofits",
+                      "To replace traditional fundraising with automated AI"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The program equips nonprofit professionals with knowledge and skills to use AI tools responsibly to amplify their mission and serve communities better."
+                  },
+                  {
+                    "id": "q-np-welcome-2",
+                    "question": "How can nonprofits particularly benefit from AI Fluency?",
+                    "choices": [
+                      "By automating all donor relationships",
+                      "By extending the impact of small teams through AI-assisted communications, research, and reporting",
+                      "By replacing human volunteers with AI",
+                      "By using AI to make financial investment decisions"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Nonprofits often have small teams with large missions. AI can help extend their capacity — drafting communications, conducting research, and creating reports."
+                  },
+                  {
+                    "id": "q-np-welcome-3",
+                    "question": "What unique challenge do nonprofits face when adopting AI?",
+                    "choices": [
+                      "Nonprofits have too much money to spend on AI",
+                      "Balancing AI adoption with mission alignment, beneficiary data privacy, and ethical considerations",
+                      "Nonprofits are not allowed to use AI tools",
+                      "Nonprofits already have more AI than for-profit companies"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Nonprofits must navigate AI adoption while ensuring it aligns with their mission, protects the privacy of vulnerable beneficiaries, and reflects their ethical commitments."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s8v6",
+              "title": "The 4D Framework for nonprofits",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=EgF7VcznCOc",
+              "provider": "youtube",
+              "reason": "The 4D Framework for nonprofits",
+              "level": "Regular",
+              "duration": "6:11",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-np-4d-1",
+                    "question": "How does the 4D Framework apply specifically to nonprofit work?",
+                    "choices": [
+                      "It replaces all nonprofit processes",
+                      "It provides a structured way to delegate, describe, discern, and apply diligence for mission-driven work",
+                      "It only applies to fundraising tasks",
+                      "It requires nonprofits to build their own AI models"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The 4D Framework adapts to nonprofit work — helping staff delegate appropriate tasks to AI, describe them clearly, critically evaluate outputs, and maintain diligence about accuracy and ethics."
+                  },
+                  {
+                    "id": "q-np-4d-2",
+                    "question": "Which aspect of the 4D Framework is particularly critical for nonprofits handling beneficiary data?",
+                    "choices": [
+                      "Delegate",
+                      "Describe",
+                      "Diligence",
+                      "Discern"
+                    ],
+                    "answerIndex": 2,
+                    "explanation": "Diligence is especially critical when handling beneficiary data — ensuring all AI-assisted work respects privacy and complies with data protection requirements."
+                  },
+                  {
+                    "id": "q-np-4d-3",
+                    "question": "What is a practical example of using Delegation in a nonprofit context?",
+                    "choices": [
+                      "Delegating all donor calls to AI",
+                      "Delegating the drafting of grant reports, donor communications, or impact summaries to Claude",
+                      "Letting AI make all organizational decisions",
+                      "Delegating volunteer management entirely to AI"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Nonprofits can delegate writing tasks like grant reports, donor newsletters, and impact summaries to Claude — freeing staff to focus on relationship-building and strategy."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "s8t3-nextsteps",
+          "title": "Next Steps",
+          "description": "Close out your training with a clear action plan for continuing to build your AI skills and applying what you've learned in your daily work.",
+          "videos": [
+            {
+              "id": "s8v7",
+              "title": "Next steps",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=hAhXWIvYCoE",
+              "provider": "youtube",
+              "reason": "Next steps",
+              "level": "Regular",
+              "duration": "3:15",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "q-nextsteps-1",
+                    "question": "What is the recommended first action after completing AI Fluency training?",
+                    "choices": [
+                      "Wait until AI becomes more advanced",
+                      "Identify one specific task in your daily work where you can immediately apply AI",
+                      "Share all training materials publicly",
+                      "Ask IT to implement AI for you"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The most effective way to build on AI training is to immediately apply what you've learned — identify a specific recurring task and start experimenting right away."
+                  },
+                  {
+                    "id": "q-nextsteps-2",
+                    "question": "How should you continue developing your AI skills after this course?",
+                    "choices": [
+                      "Take no further action — the course covered everything",
+                      "Experiment regularly, reflect on what works, and stay current with new AI capabilities",
+                      "Only use AI tools you already know well",
+                      "Avoid experimenting until you're fully expert"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "AI Fluency is a continuous journey. Regular experimentation, reflection, and staying current with evolving capabilities separate proficient users from experts."
+                  },
+                  {
+                    "id": "q-nextsteps-3",
+                    "question": "What is the best way to apply AI Fluency in your daily work?",
+                    "choices": [
+                      "Use AI for every possible task without evaluation",
+                      "Start small with low-risk tasks, evaluate results, and gradually expand AI use to higher-value activities",
+                      "Use AI only when instructed by your manager",
+                      "Apply AI to the most critical decisions first"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Start with low-risk, high-frequency tasks where you can easily evaluate quality. Build confidence and skill, then progressively apply AI to more complex work."
                   }
                 ]
               }
