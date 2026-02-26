@@ -2,9 +2,10 @@
   "name": "ai-training-portal",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@9.15.0",
   "engines": {
-    "node": ">=20.19.0",
-    "npm": ">=10"
+    "node": ">=24.13.1",
+    "pnpm": ">=9"
   },
   "scripts": {
     "dev": "next dev",
@@ -14,7 +15,7 @@
     "lint": "next lint",
     "type-check": "tsc --noEmit",
     "lint:yaml": "yamllint -c .yamllint .github/ docker-compose.yml .yamllint",
-    "test": "npm run test:backend && npm run test:frontend",
+    "test": "pnpm run test:backend && pnpm run test:frontend",
     "test:backend": "jest --config jest.config.backend.js --coverage",
     "test:frontend": "jest --config jest.config.frontend.js --coverage",
     "test:coverage:backend": "jest --config jest.config.backend.js --coverage --coverageReporters=text --coverageReporters=lcov",
@@ -40,7 +41,7 @@
     "@testing-library/react": "^14.3.1",
     "@testing-library/user-event": "^14.6.1",
     "@types/jest": "^29.5.14",
-    "@types/node": "20.12.12",
+    "@types/node": "^24.0.0",
     "@types/react": "18.2.73",
     "@types/react-dom": "18.2.22",
     "autoprefixer": "10.4.19",

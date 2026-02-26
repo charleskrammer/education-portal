@@ -1,12 +1,14 @@
 # syntax=docker/dockerfile:1
 
 # ── Stage 1: Install dependencies ─────────────────────────────────────────────
-FROM node:20-bookworm-slim AS deps
+FROM node:24-bookworm-slim AS deps
 WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
 
-COPY package.json package-lock.json ./
-RUN npm ci --frozen-lockfile
+RUN corepack enable
+
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
 
 # ── Stage 2: Build application ────────────────────────────────────────────────
 FROM deps AS build
@@ -17,12 +19,12 @@ COPY prisma ./prisma
 RUN npx prisma generate
 
 COPY . .
-RUN DOCKER_BUILD=1 npm run build
+RUN DOCKER_BUILD=1 pnpm run build
 RUN npx tsc -p prisma/tsconfig.seed.json
-RUN npm prune --omit=dev
+RUN pnpm prune --prod
 
 # ── Stage 3: Production runtime ───────────────────────────────────────────────
-FROM node:20-bookworm-slim AS runtime
+FROM node:24-bookworm-slim AS runtime
 WORKDIR /app
 
 ENV NODE_ENV=production \
