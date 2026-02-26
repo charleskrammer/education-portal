@@ -10,6 +10,7 @@ export type SessionUser = {
   name: string;
   role: string;
   teamId: string;
+  track: string;
 };
 
 /** Read the current session from the cookie and return the user, or null. */
@@ -20,7 +21,7 @@ export async function getSessionUser(): Promise<SessionUser | null> {
 
   const session = await db.session.findUnique({
     where: { id: sessionId },
-    include: { user: true },
+    include: { user: { include: { team: true } } },
   });
 
   if (!session) return null;
@@ -35,5 +36,6 @@ export async function getSessionUser(): Promise<SessionUser | null> {
     name: session.user.name,
     role: session.user.role,
     teamId: session.user.teamId,
+    track: session.user.team.track,
   };
 }

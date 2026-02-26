@@ -50,7 +50,7 @@ export default function DashboardPage() {
           <h1 className="text-3xl font-heading font-semibold text-ink">
             {user?.name ? `Welcome back, ${user.name.split(" ")[0]}` : "Your dashboard"}
           </h1>
-          <p className="text-sm text-slate-600">Your quiz performance drives your score and company ranking.</p>
+          <p className="text-sm text-slate-600">Your quiz performance drives your score and track ranking.</p>
           <div className="mt-2 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <KpiCard label="Quizzes completed" value={`${quizzesCompleted}`} helper="Videos with quiz submitted" />
             <KpiCard label="Overall accuracy" value={`${accuracy}%`} helper="Questions answered correctly" />
@@ -67,7 +67,7 @@ export default function DashboardPage() {
       {/* Rank + Grade */}
       <section className="grid gap-6 md:grid-cols-2">
         <div className="section-card p-6">
-          <h2 className="section-title">Your company ranking</h2>
+          <h2 className="section-title">Your track ranking</h2>
           <div className="mt-4 flex items-end gap-4">
             <div>
               <p className="text-4xl font-heading font-bold text-ink">
@@ -101,8 +101,8 @@ export default function DashboardPage() {
 
       {/* Company Top 10 */}
       <section className="section-card p-6">
-        <h2 className="section-title">Company-wide Top 10</h2>
-        <p className="mt-1 text-xs text-slate-500">Ranked by total quiz score across the whole company.</p>
+        <h2 className="section-title">Top 10 in your track</h2>
+        <p className="mt-1 text-xs text-slate-500">Ranked by total quiz score across your track.</p>
         <div className="mt-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>

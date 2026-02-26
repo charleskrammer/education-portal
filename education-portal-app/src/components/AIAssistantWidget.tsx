@@ -399,7 +399,7 @@ export default function AIAssistantWidget() {
               </div>
               <p className="text-sm font-semibold text-ink">How can I help you?</p>
               <p className="text-xs text-slate-500 leading-relaxed max-w-[240px]">
-                Describe what you want to do with AI. I'll guide you and suggest the best training video.
+                Describe what you want to do with AI. I&apos;ll guide you and suggest the best training video.
               </p>
               <div className="mt-1 flex flex-col gap-2 w-full">
                 {[

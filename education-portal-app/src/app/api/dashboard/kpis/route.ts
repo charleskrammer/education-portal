@@ -43,8 +43,11 @@ export async function GET() {
     }
   }
 
-  // --- Company-wide ranking (latest attempt per quiz, per user) ---
-  const allUsers = await db.user.findMany({ select: { id: true, externalId: true, name: true } });
+  // --- Track-scoped ranking (latest attempt per quiz, per user in same track) ---
+  const allUsers = await db.user.findMany({
+    where: { team: { track: user.track } },
+    select: { id: true, externalId: true, name: true },
+  });
 
   // Fetch all completed attempts for all users in one query
   const allUserAttempts = await db.quizAttempt.findMany({

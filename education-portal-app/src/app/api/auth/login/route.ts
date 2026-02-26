@@ -37,12 +37,15 @@ export async function POST(req: NextRequest) {
       },
     });
 
+    const host = req.headers.get("host") ?? "";
+    const isLocalhost = host.startsWith("localhost") || host.startsWith("127.0.0.1");
+
     res.cookies.set(SESSION_COOKIE, session.id, {
       httpOnly: true,
       sameSite: "lax",
       path: "/",
       maxAge: SESSION_MAX_AGE,
-      secure: process.env.NODE_ENV === "production",
+      secure: process.env.NODE_ENV === "production" && !isLocalhost,
     });
 
     return res;

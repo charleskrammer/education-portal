@@ -34,7 +34,7 @@ export default function NavBar() {
             <NavLink href="/assistant" label="AI Assistant" />
             {user.role === "manager" && (
               <Link href="/manager" className="font-bold text-red-600 hover:text-red-700 transition">
-                Manager's Dashboard
+                Manager&apos;s Dashboard
               </Link>
             )}
           </>
