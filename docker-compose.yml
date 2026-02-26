@@ -1,0 +1,57 @@
+---
+# docker-compose.yml — Local production-like environment.
+#
+# Usage:
+#   docker compose up --build          # first run (seeds demo accounts)
+#   docker compose up --build -d       # detached
+#   docker compose down -v             # stop and wipe DB volume
+#
+# Secrets: DATABASE_URL and Postgres credentials below are LOCAL-ONLY defaults.
+# Never use these values in production. Production secrets must be injected via
+# your secret manager (e.g. GitHub Actions secrets, Vault, AWS Secrets Manager).
+#
+# Optional: create .env.local with ANTHROPIC_API_KEY=... for AI features.
+name: claude-training-portal
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: claude_training
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres # local-only default — never use in production
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d claude_training"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+
+  web:
+    build: ./education-portal-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@db:5432/claude_training?schema=public"
+      DATABASE_URL_UNPOOLED: "postgresql://postgres:postgres@db:5432/claude_training?schema=public"
+      SEED_DB: "true"
+      NODE_ENV: production
+    env_file:
+      - path: .env.local
+        required: false
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3000/api/health >/dev/null 2>&1 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 3
+
+volumes:
+  db_data:

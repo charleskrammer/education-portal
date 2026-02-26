@@ -1,0 +1,35 @@
+commonhelm:
+  services:
+    xbo-expenses-app:
+      image:
+        repo: __docker_registry_url__/xbo-expenses-app
+        tag: __xbo_expenses_app_build_version__
+      app:
+        brand: __brand__
+        name: xbo-expenses
+        type: app
+      ingress:
+        - host: __xbo_expenses_app_traefik_host__
+          sticky: false
+      variables:
+        NODE_ENV: production
+        PORT: 8080
+        S3_BUCKET: xbo-expenses-attachments-dev
+        S3_REGION: eu-west-1
+        APP_CORS_URL: https://__xbo_expenses_app_traefik_host__
+        DB_SSL_DISABLED: false
+      secrets:
+        DATABASE_URL: __xbo_expenses_app_dbConnection__
+        JWT_SECRET: __xbo_expenses_app_jwt_secret__
+
+        ANTHROPIC_API_KEY: __anthropic_api_key__
+        SETTINGS_ENCRYPTION_KEY: __xbo_expenses_settings_encryption_key__
+
+        USE_S3: true
+        S3_ACCESS_KEY_ID: __aws_s3_access_id__
+        S3_SECRET_ACCESS_KEY: __aws_s3_secret__
+        
+      deployment:
+        replicas: __replicas__
+      nodeSelector:
+        type: __selector_type__

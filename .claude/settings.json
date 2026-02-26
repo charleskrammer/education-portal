@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(test -d /Users/vk/education-portal-repo/education-portal/education-portal-app/docker)"
+    ],
+    "additionalDirectories": [
+      "/Users/vk/education-portal-repo/education-portal/education-portal-app"
+    ]
+  }
+}

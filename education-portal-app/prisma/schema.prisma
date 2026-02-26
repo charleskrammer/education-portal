@@ -1,0 +1,84 @@
+// This is your Prisma schema file
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  // directUrl is used by `prisma migrate deploy` and Prisma Studio.
+  // Neon (via Vercel marketplace) auto-injects DATABASE_URL_UNPOOLED as the direct connection.
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  externalId   String   @unique // original id from users.json e.g. "alex"
+  name         String
+  role         String   // "learner" | "manager"
+  teamId       String
+  passwordHash String
+  createdAt    DateTime @default(now())
+
+  sessions     Session[]
+  quizAttempts QuizAttempt[]
+  progress     VideoProgress[]
+
+  @@index([teamId])
+}
+
+model Team {
+  id   String @id
+  name String
+}
+
+model Session {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime  @default(now())
+  expiresAt DateTime?
+
+  quizAttempts QuizAttempt[]
+
+  @@index([userId])
+  @@index([createdAt])
+}
+
+model QuizAttempt {
+  id              String    @id @default(cuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sessionId       String
+  session         Session   @relation(fields: [sessionId], references: [id])
+  quizId          String    // same as videoId
+  videoId         String
+  attemptNumber   Int
+  startedAt       DateTime  @default(now())
+  completedAt     DateTime?
+  totalQuestions  Int
+  correctAnswers  Int
+  firstTryCorrect Int
+  scoreEarned     Int       @default(0)
+  answers         Json      // [{questionId, firstSelectedIndex, finalSelectedIndex}]
+
+  @@unique([userId, quizId, attemptNumber])
+  @@index([userId])
+  @@index([quizId])
+  @@index([userId, quizId])
+  @@index([completedAt])
+  @@index([startedAt])
+}
+
+model VideoProgress {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  videoId     String
+  done        Boolean   @default(false)
+  completedAt DateTime?
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([userId, videoId])
+  @@index([userId])
+}

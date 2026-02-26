@@ -1,0 +1,57 @@
+# Version control
+.git
+.gitattributes
+.gitignore
+
+# CI/CD — not needed at runtime
+.github
+
+# Next.js build output — rebuilt inside container
+.next
+
+# Dependencies — installed fresh inside container
+node_modules
+
+# Test coverage output
+coverage
+
+# Logs
+*.log
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# macOS metadata
+.DS_Store
+
+# Environment files — secrets must never enter the build context
+.env
+.env.local
+.env.compose
+.env.*
+
+# Compose file — not needed inside the image
+docker-compose.yml
+
+# Documentation — not needed at runtime
+README.md
+
+# Planning / tooling artifacts — not needed at runtime
+.planning
+.vscode
+.claude
+
+# Prisma compiled seed artifact (regenerated at build time)
+prisma/dist-seed
+
+# Test infrastructure — not needed at runtime
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+jest.config*.js
+jest.setup.ts
+
+# YAML lint / security scan config — not needed at runtime
+.yamllint
+.trivyignore

@@ -1,0 +1,11 @@
+name: education-portal-app
+description: customer wallet service
+version: __build_number__
+apiVersion: v2
+keywords:
+  - education-portal-app
+home: 'TODO'
+dependencies:
+- name: commonhelm
+  version: ~2.6
+  repository: "https://proget.space-app.io/helm/devops-helm-stable/"

@@ -1,0 +1,22 @@
+---
+# .yamllint — YAML lint rules for this repository.
+# Targets: GitHub Actions workflows and docker-compose.yml
+# Run: yamllint -c .yamllint .github/ docker-compose.yml
+extends: default
+
+rules:
+  line-length:
+    max: 120
+    level: warning
+  truthy:
+    # Allow GitHub Actions boolean strings and Docker Compose values
+    allowed-values: ["true", "false", "on", "off", "yes", "no"]
+    check-keys: false
+  comments:
+    min-spaces-from-content: 1
+  indentation:
+    spaces: 2
+    indent-sequences: consistent
+  new-line-at-end-of-file: enable
+  trailing-spaces: enable
+  document-start: disable

@@ -1,0 +1,26 @@
+name: "1.0.$(Rev:r)"
+
+resources:
+  repositories:
+  - repository: templates
+    type: git
+    name: DevOps\devops.pipeline.templates
+    ref: refs/heads/main
+
+trigger:
+- main
+
+variables:
+  build_number: $(Build.BuildNumber)
+  service_name: 'education-portal-app'
+
+jobs:
+  - template: './src/docker/docker_build_v1.0.0.yml@templates'
+    parameters:
+      registry_name: vibe-docker-alpha
+      docker_images:
+      - name: 'education-portal-app'
+        path: 'education-portal-app/Dockerfile'
+        build_context: './education-portal-app'
+        arguments: '--build-arg artifact_build_number=$(build_number)'
+  - template: './src/artifact/artifact_build_v1.0.0.yml@templates'

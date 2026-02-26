@@ -1,0 +1,18 @@
+name: $(Build.SourceBranchName)-$(Date:yyyyMMdd)$(Rev:.rr)
+
+resources:
+  repositories:
+  - repository: templates
+    type: git
+    name: DevOps\devops.pipeline.templates
+    ref: refs/heads/main
+
+trigger: none
+
+variables:
+- group: pullrequest_vars_lib
+- name: build_number
+  value: '0.0.0'
+
+jobs:
+  - template: './src/pr.helm/pr_helm_v2.0.0.yml@templates'

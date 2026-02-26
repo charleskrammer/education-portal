@@ -1,0 +1,23 @@
+version: __hw_version__
+
+# General options
+.options: &options
+  wait: __hw_options_wait__
+  wait_for_jobs: __hw_options_wait_for_jobs__
+  force: __hw_options_force__
+  timeout: __hw_options_timeout__
+  atomic: __hw_options_atomic__
+  max_history: __hw_options_max_history__
+  create_namespace: __hw_options_create_namespace__
+
+releases:
+
+- name: education-portal-app-__brand__
+  chart:
+    name: ./
+  namespace: __namespace__
+  tags: [education-portal-app]
+  values:
+    - values_migrator_job.yaml
+    - values_education_portal_app.yaml
+  <<: *options

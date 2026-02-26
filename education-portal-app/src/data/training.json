@@ -1,0 +1,1761 @@
+{
+  "portal": {
+    "title": "Claude Learning Path",
+    "subtitle": "A 4-step journey to master Claude — from basics to advanced integrations. All 31 videos sourced exclusively from official Anthropic channels.",
+    "audience": "Technical and non-technical employees"
+  },
+  "steps": [
+    {
+      "id": "1",
+      "title": "Claude Basics",
+      "summary": "Discover Claude, learn the interface, and master the core features: Artifacts, Projects, Connectors, and Skills.",
+      "time_estimate": "~60 min",
+      "objectives": [
+        "Understand what Claude is and navigate Claude.ai confidently",
+        "Create and iterate on Artifacts for documents, code, and interactive content",
+        "Use Projects to maintain persistent context across sessions",
+        "Connect external tools via Connectors",
+        "Create and use Skills to teach Claude your working preferences"
+      ],
+      "checklist": [
+        "Sign in to Claude.ai and complete your first conversation",
+        "Create one Artifact (document or interactive HTML)",
+        "Set up a Project with a custom instruction",
+        "Connect at least one external tool via Connectors",
+        "Create a Skill based on a recurring task"
+      ],
+      "topics": [
+        {
+          "id": "s1t1-start",
+          "title": "Getting Started",
+          "description": "Set up your Claude account, understand the interface, and discover the Claude Sonnet 4.5 model's capabilities.",
+          "videos": [
+            {
+              "id": "s1v1",
+              "title": "Getting started with Claude.ai",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=0vZ_UVLhSQQ",
+              "provider": "youtube",
+              "reason": "Official walkthrough covering account setup, the chat interface, and your first prompts — the essential starting point for all learners.",
+              "level": "Beginner",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s1v1-q1",
+                    "question": "What is Claude primarily designed to do?",
+                    "choices": [
+                      "Search the web and return links",
+                      "Assist with writing, analysis, coding, and research through conversation",
+                      "Compile and run programming code",
+                      "Manage social media accounts"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude is Anthropic's conversational AI assistant, built to help with a wide range of tasks including writing, analysis, research, and coding — all through natural language."
+                  },
+                  {
+                    "id": "s1v1-q2",
+                    "question": "True or False: Claude retains memory of previous conversations by default.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "By default, Claude does not remember previous conversations. Each new chat starts fresh. Projects are the feature that allows context to persist across sessions."
+                  },
+                  {
+                    "id": "s1v1-q3",
+                    "question": "Which of the following is NOT something Claude can do?",
+                    "choices": [
+                      "Write and edit documents",
+                      "Generate images from text descriptions",
+                      "Analyze uploaded files",
+                      "Help debug code"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude is a text-based AI and cannot generate images. For image generation you would need a separate tool like Midjourney or DALL-E."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s1v2",
+              "title": "Getting the most out of Sonnet 4.5 in Claude.ai",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=PnX30ZXxKco",
+              "provider": "youtube",
+              "reason": "Explains what makes Claude Sonnet 4.5 distinctive and how to use its advanced reasoning and extended thinking for complex professional tasks.",
+              "level": "Beginner",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s1v2-q1",
+                    "question": "What is Claude Sonnet 4.5 particularly optimized for?",
+                    "choices": [
+                      "Simple, one-word answers",
+                      "High-capability tasks requiring strong reasoning across complex work",
+                      "Generating images and diagrams",
+                      "Managing email inboxes"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude Sonnet 4.5 is designed for high-capability professional tasks, combining strong reasoning with broad knowledge to handle complex requests effectively."
+                  },
+                  {
+                    "id": "s1v2-q2",
+                    "question": "True or False: Claude Sonnet 4.5 can read and analyze uploaded files like PDFs and spreadsheets.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude Sonnet 4.5 supports file uploads, allowing you to analyze PDFs, spreadsheets, images, and other documents directly within the conversation."
+                  },
+                  {
+                    "id": "s1v2-q3",
+                    "question": "Which feature allows Claude to remember your preferences and context across multiple conversations?",
+                    "choices": [
+                      "Conversation history",
+                      "Projects with custom instructions",
+                      "The bookmarks tab",
+                      "Auto-save settings"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Projects let you define custom instructions that Claude applies to every conversation within that project, effectively giving it persistent memory of your preferences."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "s1t2-features",
+          "title": "Core Features",
+          "description": "Master Artifacts, Projects, Connectors, and Skills — the four pillars that transform Claude from a chatbot into a persistent work assistant.",
+          "videos": [
+            {
+              "id": "s1v3",
+              "title": "Intro to Artifacts",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1014496079",
+              "provider": "vimeo",
+              "reason": "Official guide to creating and managing Artifacts — Claude's ability to produce standalone documents, code, and interactive web content alongside your conversation.",
+              "level": "Beginner",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s1v3-q1",
+                    "question": "What are Artifacts in Claude?",
+                    "choices": [
+                      "Saved conversation summaries",
+                      "Standalone outputs like code, documents, or interactive web pages created alongside the chat",
+                      "Image files attached to messages",
+                      "Shared team workspaces"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Artifacts are distinct, reusable outputs Claude creates alongside your conversation — they can be code files, documents, HTML pages, or interactive apps you can preview and iterate on."
+                  },
+                  {
+                    "id": "s1v3-q2",
+                    "question": "True or False: You can iterate on an Artifact multiple times without losing your conversation history.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Artifacts are independent of the conversation thread, so you can refine them across many messages while keeping the full conversation history intact."
+                  },
+                  {
+                    "id": "s1v3-q3",
+                    "question": "Which of the following can Claude produce as an Artifact?",
+                    "choices": [
+                      "A shareable public link to a website",
+                      "An interactive HTML/JavaScript component you can preview instantly",
+                      "A PDF with embedded video",
+                      "A new user account"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can create interactive HTML/JavaScript Artifacts that you can preview directly in the chat — perfect for prototyping dashboards, calculators, or simple tools."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s1v4",
+              "title": "Intro to Projects",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=GJ5jTgcbRHA",
+              "provider": "youtube",
+              "reason": "Shows how Projects let you set persistent instructions and share documents with Claude so it always has the right context for your work.",
+              "level": "Beginner",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s1v4-q1",
+                    "question": "What is the main benefit of using Projects in Claude?",
+                    "choices": [
+                      "Sharing your conversations publicly",
+                      "Maintaining persistent context and custom instructions across all chats in that project",
+                      "Storing files permanently in the cloud",
+                      "Inviting external collaborators to co-edit responses"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Projects allow you to define custom instructions and upload reference documents that Claude will remember and use across every conversation in that project."
+                  },
+                  {
+                    "id": "s1v4-q2",
+                    "question": "True or False: You can add documents and files to a Project for Claude to reference in conversations.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Projects support adding files and documents as context. Claude will reference these automatically in all conversations within the project."
+                  },
+                  {
+                    "id": "s1v4-q3",
+                    "question": "How many Projects can you create in Claude?",
+                    "choices": [
+                      "Only one",
+                      "Up to five",
+                      "As many as you need for different workflows",
+                      "Only with a paid plan"
+                    ],
+                    "answerIndex": 2,
+                    "explanation": "You can create as many Projects as needed, each with its own instructions, files, and context — for example, separate projects for different clients or teams."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s1v5",
+              "title": "Intro to Connectors",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=_jjSS0qGFbI",
+              "provider": "youtube",
+              "reason": "Introduces Connectors — the feature that links Claude to your external tools like Google Drive and GitHub so it can work with your real data.",
+              "level": "Beginner",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s1v5-q1",
+                    "question": "What do Connectors in Claude allow you to do?",
+                    "choices": [
+                      "Connect Claude to other AI models",
+                      "Link Claude to external tools like Google Drive or GitHub to work with your real data",
+                      "Export conversations to email automatically",
+                      "Schedule automated tasks on a calendar"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Connectors extend Claude's reach by giving it secure, authorized access to your external tools and data sources so it can reference live information."
+                  },
+                  {
+                    "id": "s1v5-q2",
+                    "question": "True or False: Using a Connector, Claude can directly access files stored in your Google Drive.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "With the Google Drive Connector enabled, Claude can read your documents and spreadsheets to use as context — no manual copy-pasting required."
+                  },
+                  {
+                    "id": "s1v5-q3",
+                    "question": "What is required to activate a Connector in Claude?",
+                    "choices": [
+                      "Installing a separate desktop application",
+                      "Authorizing the integration in your Claude account settings",
+                      "Purchasing an enterprise license",
+                      "Contacting Anthropic support"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Connectors are set up in your Claude account settings — you authorize the integration once, and Claude can then securely access that tool going forward."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s1v6",
+              "title": "How to create a skill with Claude through conversation",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=kS1MJFZWMq4",
+              "provider": "youtube",
+              "reason": "Demonstrates how to create Skills — reusable instruction sets that teach Claude to handle recurring tasks exactly the way you want them done.",
+              "level": "Beginner",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s1v6-q1",
+                    "question": "What is a Skill in Claude?",
+                    "choices": [
+                      "A built-in Claude feature that requires no setup",
+                      "A custom instruction set that teaches Claude to perform a specific task your preferred way",
+                      "A certification badge earned after completing training",
+                      "A type of Artifact for code"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Skills are reusable instruction sets you create to encode exactly how Claude should handle a recurring task — like writing in your brand voice or formatting reports your way."
+                  },
+                  {
+                    "id": "s1v6-q2",
+                    "question": "True or False: Skills can be created simply through a natural conversation with Claude.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "You describe the task and your preferences in conversation, and Claude formalizes them into a reusable Skill — no technical setup needed."
+                  },
+                  {
+                    "id": "s1v6-q3",
+                    "question": "How do you invoke a Skill once it has been created?",
+                    "choices": [
+                      "Re-explain all instructions at the start of every chat",
+                      "Reference the Skill by name in your prompt",
+                      "It activates automatically for every message",
+                      "Download and install it as a browser extension"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "After creating a Skill, you simply mention its name in a prompt and Claude will apply those specific instructions to the task — no repetition needed."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s1v7",
+              "title": "Teach Claude your way of working using skills",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=IoqpBKrNaZI",
+              "provider": "youtube",
+              "reason": "Shows how to encode your personal working preferences — tone, format, structure — into Skills so Claude consistently delivers results exactly how you like them.",
+              "level": "Beginner",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s1v7-q1",
+                    "question": "What kind of preferences can you encode into a Claude Skill?",
+                    "choices": [
+                      "Your favorite color and music",
+                      "Your writing style, preferred formats, and workflow conventions",
+                      "Your device settings and time zone",
+                      "Your calendar and meeting schedule"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Skills are designed to capture professional working preferences — tone, output structure, formatting rules — so Claude delivers consistently styled results."
+                  },
+                  {
+                    "id": "s1v7-q2",
+                    "question": "True or False: Skills are only available to users on paid Claude plans.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Skills are a standard Claude feature available to users for personalizing recurring tasks, regardless of plan tier."
+                  },
+                  {
+                    "id": "s1v7-q3",
+                    "question": "Why are Skills more efficient than repeating instructions in every conversation?",
+                    "choices": [
+                      "They make Claude respond significantly faster",
+                      "They eliminate the need to re-explain your preferences each time",
+                      "They grant Claude access to the internet",
+                      "They increase Claude's token limit"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Skills encode your preferences once so Claude applies them consistently — removing the repetitive overhead of explaining your style at the start of every chat."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Claude for Work",
+      "summary": "Apply Claude across professional roles — engineering, HR, marketing, product, sales — and boost your everyday productivity.",
+      "time_estimate": "~60 min",
+      "objectives": [
+        "Use Claude to draft, edit, and transform professional content",
+        "Apply Claude to role-specific tasks in your team or department",
+        "Leverage Claude's browsing integration to work faster in Chrome",
+        "Use Sonnet 4.5 capabilities to produce polished outputs across tools"
+      ],
+      "checklist": [
+        "Identify 3 recurring tasks in your role that Claude can help with",
+        "Use Claude to draft or rewrite a professional document",
+        "Install and test the Claude Chrome extension",
+        "Generate role-specific content (job description, proposal, brief, etc.)"
+      ],
+      "topics": [
+        {
+          "id": "s2t1-roles",
+          "title": "Professional Applications",
+          "description": "Official Anthropic guides showing how Claude accelerates work across the most common business functions.",
+          "videos": [
+            {
+              "id": "s2v1",
+              "title": "Claude for Engineering",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1014496779",
+              "provider": "vimeo",
+              "reason": "Official tutorial demonstrating how engineering teams use Claude for code review, debugging, documentation, and onboarding new developers.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v1-q1",
+                    "question": "Which engineering task is Claude particularly effective at?",
+                    "choices": [
+                      "Hardware design and circuit testing",
+                      "Code review, debugging, and writing technical documentation",
+                      "Managing physical server infrastructure",
+                      "Building PCB prototypes"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude excels at software engineering tasks — reviewing code, explaining bugs, suggesting fixes, and drafting clear technical documentation to help teams move faster."
+                  },
+                  {
+                    "id": "s2v1-q2",
+                    "question": "True or False: Claude can generate unit tests for existing code.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can analyze your code and generate unit tests, propose edge cases, and review test coverage — helping engineering teams ship with more confidence."
+                  },
+                  {
+                    "id": "s2v1-q3",
+                    "question": "How can Claude help onboard new engineers to a large codebase?",
+                    "choices": [
+                      "By automatically granting GitHub repository access",
+                      "By summarizing the codebase and explaining how different parts work",
+                      "By running CI/CD pipelines on their behalf",
+                      "By creating user accounts in internal systems"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can read large codebases, explain the purpose of different modules and functions, and answer questions in plain language — dramatically reducing ramp-up time for new developers."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s2v2",
+              "title": "Claude for Human Resources",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1018853549",
+              "provider": "vimeo",
+              "reason": "Demonstrates how HR professionals use Claude to draft job descriptions, analyze surveys, create learning plans, and handle employee communications.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v2-q1",
+                    "question": "Which HR task can Claude most effectively assist with?",
+                    "choices": [
+                      "Processing payroll and financial transactions",
+                      "Drafting job descriptions, interview questions, and HR communications",
+                      "Managing benefits enrollment systems",
+                      "Automatically scheduling performance review meetings"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude helps HR teams write clear, structured job descriptions, generate relevant interview questions, and draft professional communications quickly."
+                  },
+                  {
+                    "id": "s2v2-q2",
+                    "question": "True or False: Claude can analyze open-ended employee survey responses and identify key themes.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can process qualitative survey data, identify recurring themes, surface sentiments, and summarize insights — saving HR teams hours of manual analysis."
+                  },
+                  {
+                    "id": "s2v2-q3",
+                    "question": "How can Claude support employee development efforts?",
+                    "choices": [
+                      "By automatically assigning performance ratings",
+                      "By creating personalized learning plans and drafting development feedback",
+                      "By accessing HR databases and updating employee records",
+                      "By managing training platform subscriptions"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can help HR and managers draft personalized development plans, write constructive feedback, and create training materials tailored to individual needs."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s2v3",
+              "title": "Claude for Marketing",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1014496083",
+              "provider": "vimeo",
+              "reason": "Shows how marketing teams use Claude to draft and repurpose content, conduct competitive research, and maintain consistent brand voice at scale.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v3-q1",
+                    "question": "How can Claude help a marketing team increase content output?",
+                    "choices": [
+                      "By automatically publishing posts on social media platforms",
+                      "By drafting, editing, and repurposing content across multiple formats",
+                      "By managing advertising campaign budgets",
+                      "By tracking website traffic analytics"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can write blog posts, social copy, email campaigns, and repurpose content between formats — dramatically increasing the team's content velocity without sacrificing quality."
+                  },
+                  {
+                    "id": "s2v3-q2",
+                    "question": "True or False: Claude can consistently apply a specific brand voice when creating content.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "You can describe your brand's tone and style guidelines to Claude — or save them as a Skill — and it will apply that voice consistently across all content it generates."
+                  },
+                  {
+                    "id": "s2v3-q3",
+                    "question": "Which marketing task is Claude best suited for?",
+                    "choices": [
+                      "Managing influencer relationships",
+                      "Conducting competitive analysis and summarizing market research",
+                      "Processing payment transactions",
+                      "Placing and optimizing ad bids"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can quickly analyze competitor content, summarize lengthy research reports, and surface strategic insights — helping marketing teams stay informed without hours of manual reading."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s2v4",
+              "title": "Claude for Product Management",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1018853967",
+              "provider": "vimeo",
+              "reason": "Covers how product managers use Claude to write PRDs, craft user stories, prepare stakeholder presentations, and improve sprint planning.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v4-q1",
+                    "question": "How can Claude help a product manager with requirements writing?",
+                    "choices": [
+                      "By automatically building the product based on requirements",
+                      "By drafting user stories, acceptance criteria, and PRDs from high-level ideas",
+                      "By running user interviews on behalf of the PM",
+                      "By deploying code to production environments"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can translate high-level product ideas into structured documents — user stories with clear acceptance criteria, full PRDs, and scope definitions — very quickly."
+                  },
+                  {
+                    "id": "s2v4-q2",
+                    "question": "True or False: Claude can help PMs structure and prepare for stakeholder presentations.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can help PMs organize presentation narratives, draft talking points, summarize data for slides, and anticipate stakeholder questions before important meetings."
+                  },
+                  {
+                    "id": "s2v4-q3",
+                    "question": "What is a practical sprint-planning use of Claude?",
+                    "choices": [
+                      "Automatically assigning tasks to engineers",
+                      "Writing clear, well-defined ticket descriptions and flagging ambiguities",
+                      "Tracking time spent on individual tasks",
+                      "Facilitating live stand-up meetings"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude helps PMs write precise, unambiguous tickets, break down epics into actionable tasks, and identify gaps in requirements before work begins — reducing back-and-forth with engineering."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s2v5",
+              "title": "Claude for Sales",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1014496068",
+              "provider": "vimeo",
+              "reason": "Illustrates how sales teams use Claude to craft personalized outreach, prepare for objection handling, and produce proposals and follow-up emails faster.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v5-q1",
+                    "question": "How can Claude improve a sales team's outreach effectiveness?",
+                    "choices": [
+                      "By automatically sending cold emails to prospect lists",
+                      "By personalizing outreach messages and crafting compelling sales copy",
+                      "By pulling real-time CRM data without any integration",
+                      "By scheduling calls and meetings automatically"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude helps sales teams write personalized, persuasive outreach tailored to specific prospects, use cases, and industries — improving engagement rates significantly."
+                  },
+                  {
+                    "id": "s2v5-q2",
+                    "question": "True or False: Claude can help sales reps practice handling objections by role-playing as a skeptical customer.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "You can ask Claude to simulate a skeptical prospect, letting reps practice their objection responses in a low-stakes environment before real customer calls."
+                  },
+                  {
+                    "id": "s2v5-q3",
+                    "question": "Which sales documents can Claude help create?",
+                    "choices": [
+                      "Sales commission calculation spreadsheets",
+                      "Proposals, call scripts, and personalized follow-up emails",
+                      "CRM database schemas",
+                      "Lead scoring algorithms"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can draft compelling proposals, structured discovery call scripts, and personalized follow-up emails — helping reps spend more time selling and less time writing."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2t2-productivity",
+          "title": "Productivity Boosters",
+          "description": "Use Claude in your browser with the Chrome extension and leverage Sonnet 4.5's strengths to produce polished results across all your work tools.",
+          "videos": [
+            {
+              "id": "s2v6",
+              "title": "Simplify your browsing experience with Claude in Chrome",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=IypXvHej9eY",
+              "provider": "youtube",
+              "reason": "Shows how the Claude Chrome extension lets you summarize, analyze, and interact with web page content without leaving your browser.",
+              "level": "Beginner",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v6-q1",
+                    "question": "What does the Claude Chrome extension allow you to do?",
+                    "choices": [
+                      "Replace Google Search entirely",
+                      "Interact with web page content — summarize, explain, or analyze it — without leaving the browser",
+                      "Download any web page as a PDF",
+                      "Block advertisements on websites"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The Claude Chrome extension lets you highlight text on any page and instantly ask Claude to summarize, translate, or analyze it — keeping your workflow in one place."
+                  },
+                  {
+                    "id": "s2v6-q2",
+                    "question": "True or False: The Claude Chrome extension can summarize the entire content of a web page.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "The extension can read and summarize full web page content, saving significant time when reviewing long articles, reports, or documentation."
+                  },
+                  {
+                    "id": "s2v6-q3",
+                    "question": "How does the Claude Chrome extension improve research workflows?",
+                    "choices": [
+                      "By automatically saving bookmarks to your account",
+                      "By letting you ask questions about page content directly without manual copy-pasting",
+                      "By syncing browser tabs across all your devices",
+                      "By blocking distracting websites"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Instead of copying text into Claude.ai, the extension lets you work with web content right in your browser — making research faster and less friction-prone."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s2v7",
+              "title": "Create professional results across tools with Claude Sonnet 4.5",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=Tdg_lkCMzY0",
+              "provider": "youtube",
+              "reason": "Demonstrates how Claude Sonnet 4.5 delivers consistent, high-quality professional outputs whether used in Claude.ai, via API, or through integrated tools.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s2v7-q1",
+                    "question": "What does using Claude Sonnet 4.5 across multiple tools enable?",
+                    "choices": [
+                      "Running Claude offline without internet access",
+                      "Consistent, high-quality outputs regardless of which tool or integration you use",
+                      "Automatic syncing with all your connected devices",
+                      "Access to models from other AI providers"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude Sonnet 4.5 brings the same strong reasoning capabilities whether accessed via Claude.ai, the API, or third-party integrations — enabling reliable, professional results everywhere."
+                  },
+                  {
+                    "id": "s2v7-q2",
+                    "question": "True or False: Claude Sonnet 4.5 can format documents according to specific professional standards you describe.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "You can instruct Claude to follow specific formatting conventions — heading structures, citation styles, tone requirements — and it will apply them consistently throughout the document."
+                  },
+                  {
+                    "id": "s2v7-q3",
+                    "question": "What is the most important factor in getting consistently high-quality results from Claude Sonnet 4.5?",
+                    "choices": [
+                      "Using the same browser every time",
+                      "Providing clear, specific instructions and context in your prompts",
+                      "Only working during business hours",
+                      "Using the desktop app instead of the web version"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Regardless of the tool or integration, clear and specific prompts are the key to reliable outputs. Context and precision in instructions directly determine result quality."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Power Features",
+      "summary": "Level up with Claude's Research mode, advanced Artifact capabilities, and powerful file creation and editing tools.",
+      "time_estimate": "~75 min",
+      "objectives": [
+        "Use Claude's Research feature to synthesize information from multiple sources",
+        "Combine Research with Google Workspace for internal + external intelligence",
+        "Build interactive apps and visualizations using Artifacts",
+        "Create, edit, and batch-process files to eliminate manual work"
+      ],
+      "checklist": [
+        "Run a Research query on a complex professional question",
+        "Ask Claude to compare web research with an internal document",
+        "Build an interactive Artifact (calculator, dashboard, or form)",
+        "Upload multiple files and apply a consistent transformation",
+        "Generate a structured report from raw data"
+      ],
+      "topics": [
+        {
+          "id": "s3t1-research",
+          "title": "Research & Artifacts",
+          "description": "Explore Claude's agentic research capabilities and its ability to build interactive tools and AI-powered apps using Artifacts.",
+          "videos": [
+            {
+              "id": "s3v1",
+              "title": "Using Research",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=R-KJgjIrh24",
+              "provider": "youtube",
+              "reason": "Official guide to Claude's Research feature — an agentic mode that searches multiple sources and delivers comprehensive, cited answers to complex questions.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s3v1-q1",
+                    "question": "What does Claude's Research feature do?",
+                    "choices": [
+                      "Returns a curated list of Wikipedia articles",
+                      "Searches multiple sources agentically and delivers comprehensive, cited answers",
+                      "Connects to your internal company database",
+                      "Summarizes only documents you have personally uploaded"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Research is an agentic capability where Claude proactively searches multiple web sources, synthesizes information, and returns a well-cited, comprehensive answer — far beyond a simple web search."
+                  },
+                  {
+                    "id": "s3v1-q2",
+                    "question": "True or False: Claude's Research feature always includes citations for every source it draws from.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Research outputs include citations so you can verify information, click through to original sources, and explore further — essential for professional and analytical use cases."
+                  },
+                  {
+                    "id": "s3v1-q3",
+                    "question": "When is the Research feature most valuable to use?",
+                    "choices": [
+                      "For simple questions with a single well-known answer",
+                      "For complex questions requiring synthesis from multiple sources and perspectives",
+                      "For writing creative fiction",
+                      "For generating and running code"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Research shines on complex, multi-faceted questions — competitive analysis, policy summaries, market research — where a good answer requires drawing from many different sources."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s3v2",
+              "title": "Using Research and Google Workspace",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1076192112/752c4d2b80",
+              "provider": "vimeo",
+              "reason": "Shows how combining Research with the Google Workspace Connector lets Claude draw from both your internal documents and the live web in a single query.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s3v2-q1",
+                    "question": "What key benefit does combining Research with Google Workspace provide?",
+                    "choices": [
+                      "It replaces Google Docs entirely",
+                      "Claude can draw from both your internal Drive files and external web sources in a single query",
+                      "It automatically shares documents with your team",
+                      "It converts spreadsheets into presentation slides"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The combination is powerful because Claude can simultaneously reference your private internal documents from Drive and search the web — giving you internal + external intelligence in one answer."
+                  },
+                  {
+                    "id": "s3v2-q2",
+                    "question": "True or False: You can ask Claude to compare a competitor's public pricing with your own internal pricing document stored in Google Drive.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "This is exactly the kind of query Research + Google Workspace unlocks — combining private internal context (your Drive doc) with public external information (competitor's web pages) in one response."
+                  },
+                  {
+                    "id": "s3v2-q3",
+                    "question": "Which type of query benefits most from combining Research with Google Workspace?",
+                    "choices": [
+                      "Writing a simple internal memo",
+                      "Reconciling internal strategy documents with external market trends and competitor intelligence",
+                      "Formatting a slide presentation",
+                      "Creating a basic spreadsheet formula"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The combined power is best when you need to bridge internal knowledge (your company's documents) with external information (market data, competitor research) in one coherent, synthesized answer."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s3v3",
+              "title": "Use Artifacts to visualize and create AI apps without writing code",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=iSn77jvjojA",
+              "provider": "youtube",
+              "reason": "Demonstrates how anyone — without coding knowledge — can build interactive charts, dashboards, and mini-apps using Claude Artifacts.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s3v3-q1",
+                    "question": "What can Claude create as an Artifact that users can interact with directly?",
+                    "choices": [
+                      "Static PDF reports",
+                      "Interactive HTML/JavaScript applications and data visualizations",
+                      "Executable Python scripts that run on your machine",
+                      "Database queries"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can build interactive HTML/JavaScript Artifacts — charts, dashboards, calculators, forms — that you can use, test, and iterate on directly inside the chat."
+                  },
+                  {
+                    "id": "s3v3-q2",
+                    "question": "True or False: You need programming knowledge to ask Claude to create an interactive Artifact.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude handles all the code. You just describe what you want in plain language, and Claude builds the interactive Artifact. No technical knowledge required."
+                  },
+                  {
+                    "id": "s3v3-q3",
+                    "question": "What is the key advantage of building tools with Claude Artifacts compared to traditional software development?",
+                    "choices": [
+                      "Artifacts run on dedicated cloud servers with unlimited scale",
+                      "You can prototype and iterate on ideas in minutes without writing code yourself",
+                      "Artifacts are automatically deployed to the App Store",
+                      "Artifacts have unlimited user capacity"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The main advantage is speed — you describe an idea, Claude builds it, and you can immediately test and iterate. What might take a developer hours takes Claude minutes."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s3v4",
+              "title": "Prototype AI-Powered Apps with Claude Artifacts",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=PBxwtabGltc",
+              "provider": "youtube",
+              "reason": "Advanced look at building AI-powered interactive Artifacts with forms, dynamic inputs, and processing logic — without any developer involvement.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s3v4-q1",
+                    "question": "What makes an Artifact 'AI-powered' in the context of this tutorial?",
+                    "choices": [
+                      "It is hosted on an Anthropic cloud server",
+                      "It incorporates interactive logic that responds dynamically to user inputs",
+                      "It requires an API key to function",
+                      "It automatically connects to the internet"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "An AI-powered Artifact is one with interactive logic — forms, conditional outputs, dynamic processing — built by Claude so non-developers can create useful internal tools quickly."
+                  },
+                  {
+                    "id": "s3v4-q2",
+                    "question": "True or False: Artifacts created with Claude can include interactive forms that process user input.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can build Artifacts with input fields, buttons, and processing logic — making them suitable as quick internal tools like calculators, generators, or checklist apps."
+                  },
+                  {
+                    "id": "s3v4-q3",
+                    "question": "Which workflow best describes prototyping an app with Claude Artifacts?",
+                    "choices": [
+                      "Write code → test locally → push to GitHub",
+                      "Describe the app in chat → Claude builds it → refine iteratively",
+                      "Request a quote from a developer → approve budget → wait for delivery",
+                      "Submit a ticket to your IT team and wait"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The Artifact prototyping loop is: describe → Claude builds → you review → request changes → repeat. It's extremely fast and requires no technical setup."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "s3t2-files",
+          "title": "Files & Documents",
+          "description": "Master Claude's file creation and editing capabilities — from generating reports out of raw data to batch-processing documents in bulk.",
+          "videos": [
+            {
+              "id": "s3v5",
+              "title": "Create and edit files with Claude to eliminate hours of busy work",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=EV89Ws8Ui9Y",
+              "provider": "youtube",
+              "reason": "Introduction to Claude's file creation and editing capabilities — learn how to produce and transform documents, spreadsheets, and reports in a fraction of the usual time.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s3v5-q1",
+                    "question": "What types of files can Claude help you create and edit?",
+                    "choices": [
+                      "Only plain text .txt files",
+                      "Documents, spreadsheets, reports, presentations, and code files across many formats",
+                      "Only CSV data files",
+                      "Only PDF files"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can generate and edit a wide range of file types — written reports, structured data, code files, and more — making it a versatile content creation and editing tool."
+                  },
+                  {
+                    "id": "s3v5-q2",
+                    "question": "True or False: You can upload an existing document to Claude and ask it to edit or improve it.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude accepts file uploads and can then edit, reformat, condense, or expand the content — making it easy to improve existing documents without starting from scratch."
+                  },
+                  {
+                    "id": "s3v5-q3",
+                    "question": "How does Claude's file capability primarily save time in professional workflows?",
+                    "choices": [
+                      "By automatically syncing documents to cloud storage",
+                      "By producing or editing professional-quality content in minutes instead of hours",
+                      "By instantly converting any file to any format",
+                      "By tracking document version history automatically"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The core time saving is in creation speed — Claude can draft or transform content in minutes that would otherwise take hours of manual writing and formatting."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s3v6",
+              "title": "Creating a report from survey data",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=uNyRQW5qCcE",
+              "provider": "youtube",
+              "reason": "Practical demonstration of uploading raw survey results and having Claude produce a structured, insight-rich report with themes and recommendations.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s3v6-q1",
+                    "question": "What does Claude need to generate a report from survey data?",
+                    "choices": [
+                      "A pre-formatted report template only",
+                      "The raw survey data (CSV or pasted responses) and a description of what kind of report you want",
+                      "Direct API access to your survey platform",
+                      "Only quantitative data — Claude cannot process open-ended text responses"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "You simply share the raw data and tell Claude what you want — it will structure, analyze, and present the findings in a professional report format."
+                  },
+                  {
+                    "id": "s3v6-q2",
+                    "question": "True or False: Claude can identify recurring themes and sentiments from open-ended survey responses.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can read through qualitative text responses, group similar ideas, identify sentiment patterns, and surface key themes — work that typically takes analysts many hours manually."
+                  },
+                  {
+                    "id": "s3v6-q3",
+                    "question": "What type of content can Claude produce from survey data?",
+                    "choices": [
+                      "Only numerical charts and graphs",
+                      "Executive summaries, themed breakdowns, and actionable recommendations",
+                      "Only raw data tables",
+                      "Only bullet-point lists"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can turn raw survey data into polished reports complete with executive summaries, thematic sections, sentiment analysis, and recommended next steps tailored to your audience."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s3v7",
+              "title": "Batch editing across multiple file types",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=YKBn5gj923s",
+              "provider": "youtube",
+              "reason": "Shows how to apply consistent edits or transformations across many files at once — ideal for standardizing content across a product catalog, report series, or document library.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s3v7-q1",
+                    "question": "What does 'batch editing' with Claude mean?",
+                    "choices": [
+                      "Running automated macros in Excel or Google Sheets",
+                      "Applying the same edits or transformations consistently across multiple files or content pieces",
+                      "Editing files simultaneously with multiple users",
+                      "Sorting files into batch folders"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Batch editing means processing many files in a consistent way — for example, reformatting all product descriptions, updating tone across a content library, or standardizing headers."
+                  },
+                  {
+                    "id": "s3v7-q2",
+                    "question": "True or False: Claude can accept multiple uploaded files in a single conversation and process them together.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can receive multiple file uploads in one conversation and apply consistent transformations, analysis, or formatting changes across all of them in one session."
+                  },
+                  {
+                    "id": "s3v7-q3",
+                    "question": "Which scenario is the best example of batch editing with Claude?",
+                    "choices": [
+                      "Changing one word in a single document",
+                      "Reformatting 20 product descriptions to match an updated brand style guide",
+                      "Creating one new spreadsheet from scratch",
+                      "Generating a company logo"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Batch editing is ideal for applying the same transformation across many similar items — tone adjustments, formatting standardization, content updates — saving hours of repetitive work."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s3v8",
+              "title": "Consolidate scattered inputs into spreadsheets",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=j-OeEBL7iB8",
+              "provider": "youtube",
+              "reason": "Demonstrates how Claude can extract structured data from emails, notes, and documents scattered across formats and organize everything into a clean spreadsheet.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s3v8-q1",
+                    "question": "What problem does this Claude workflow solve?",
+                    "choices": [
+                      "Slow spreadsheet performance on large files",
+                      "Information spread across emails, notes, and documents that needs to be organized into a structured table",
+                      "Missing spreadsheet templates for financial reports",
+                      "Broken formula references in existing spreadsheets"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can ingest multiple unstructured sources — emails, meeting notes, docs, messages — and extract the relevant data into a clean, consistent spreadsheet format."
+                  },
+                  {
+                    "id": "s3v8-q2",
+                    "question": "True or False: Claude can extract specific data points from long text documents to populate a spreadsheet table.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can parse lengthy documents and extract specific fields — dates, names, amounts, statuses — and output them directly as a structured table ready to import."
+                  },
+                  {
+                    "id": "s3v8-q3",
+                    "question": "Which scenario best matches this Claude capability?",
+                    "choices": [
+                      "Designing a new website layout",
+                      "Compiling project status updates from 10 separate emails into one unified tracker",
+                      "Writing a business proposal from scratch",
+                      "Generating a marketing campaign"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude is excellent at reading unstructured content from multiple sources and organizing the key information into a unified, consistent structured format — ideal for operations and project tracking."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Integrations & Specializations",
+      "summary": "Connect Claude to your entire toolstack and explore specialized applications for finance, integrations, and advanced connector workflows.",
+      "time_estimate": "~80 min",
+      "objectives": [
+        "Connect Claude to GitHub, Google Docs, and other tools via Connectors",
+        "Automate connector-based workflows for release notes and creative content",
+        "Apply Claude to financial research, modeling, and investment memos",
+        "Build dynamic financial models with Claude-generated structures and formulas"
+      ],
+      "checklist": [
+        "Enable at least two Connectors (GitHub, Google Docs, or other)",
+        "Generate a connector-driven workflow output (release notes or design brief)",
+        "Conduct a research query combining web and internal document sources",
+        "Build or review a financial model with Claude",
+        "Draft an investment research summary from a company document"
+      ],
+      "topics": [
+        {
+          "id": "s4t1-connectors",
+          "title": "Tools & Integrations",
+          "description": "Deep-dive into Claude's Connector ecosystem: GitHub, Google Docs, and project management integrations that bring Claude into your existing workflows.",
+          "videos": [
+            {
+              "id": "s4v1",
+              "title": "Connect your tools to unlock a smarter, more capable AI companion",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=4PtGWgEO0ME",
+              "provider": "youtube",
+              "reason": "Overview of the Claude Connectors ecosystem — showing how linking Claude to your tools transforms it from a standalone assistant into an integrated part of your workflow.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": true,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v1-q1",
+                    "question": "What do Connectors fundamentally change about using Claude?",
+                    "choices": [
+                      "They connect Claude to other AI models",
+                      "They transform Claude from a standalone chatbot into a tool that accesses your live data and workflows",
+                      "They increase Claude's text response speed",
+                      "They enable Claude to work offline"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Connectors are what turn Claude from a general-purpose assistant into a powerful, contextually aware partner — because it can now work with your actual live data, not just its training knowledge."
+                  },
+                  {
+                    "id": "s4v1-q2",
+                    "question": "True or False: With Connectors, Claude can pull real-time information from connected tools into its answers.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Connectors allow Claude to fetch current information from your tools — so its answers reflect your live data, not just static knowledge from training."
+                  },
+                  {
+                    "id": "s4v1-q3",
+                    "question": "What is required to activate a Connector in Claude?",
+                    "choices": [
+                      "Installing a separate desktop application",
+                      "Authorizing the integration once in your Claude account settings",
+                      "Purchasing a separate enterprise license",
+                      "Contacting Anthropic support to request access"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Connectors are activated in your Claude account settings with a simple one-time authorization — after that, Claude can securely access the connected tool in your conversations."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v2",
+              "title": "Generating release notes from project management tools",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=xBV60h9_lbw",
+              "provider": "youtube",
+              "reason": "Practical connector workflow: Claude reads completed tickets from your project management tool and automatically generates structured, audience-appropriate release notes.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v2-q1",
+                    "question": "How does Claude use project management tool data to create release notes?",
+                    "choices": [
+                      "By publishing directly to your website",
+                      "By reading completed tickets and transforming them into structured, readable release notes",
+                      "By scheduling releases on your behalf",
+                      "By creating new JIRA tickets automatically"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "With a project management Connector, Claude reads the completed work items from your sprint or release cycle and converts them into polished release notes automatically."
+                  },
+                  {
+                    "id": "s4v2-q2",
+                    "question": "True or False: Claude can generate the same release content in both a technical version for engineers and a simplified version for business stakeholders.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can adapt the same source information for different audiences — detailed technical notes for engineers and high-level, non-technical summaries for product and business leaders."
+                  },
+                  {
+                    "id": "s4v2-q3",
+                    "question": "What is the main time-saving benefit of this automated release notes workflow?",
+                    "choices": [
+                      "It eliminates the need for a project manager entirely",
+                      "It removes the manual task of reading every ticket and writing summaries",
+                      "It speeds up software deployment and testing",
+                      "It automatically tests new features before release"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The biggest saving is eliminating the manual work of reading every ticket, extracting what's relevant, and writing readable summaries — Claude handles all of this from the connected data."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v3",
+              "title": "Creating professional designs from existing content",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=wXC2u36w2Rc",
+              "provider": "youtube",
+              "reason": "Connector workflow showing how Claude transforms raw content from connected tools into structured design briefs, creative specifications, and polished materials.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v3-q1",
+                    "question": "How does Claude assist with creating professional design materials?",
+                    "choices": [
+                      "By generating images and graphics directly",
+                      "By structuring content, writing copy, and producing design briefs or creative specifications",
+                      "By using Photoshop plugins",
+                      "By creating vector illustrations"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude's role in design workflows is content and structure — it writes compelling copy, drafts design briefs with clear objectives, and produces specifications that designers or design tools can act on."
+                  },
+                  {
+                    "id": "s4v3-q2",
+                    "question": "True or False: Claude can convert rough meeting notes into a formatted creative design brief.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can take rough notes or verbal requirements and structure them into a professional creative brief complete with objectives, audience, messaging, and content guidelines."
+                  },
+                  {
+                    "id": "s4v3-q3",
+                    "question": "What connector workflow does this video demonstrate?",
+                    "choices": [
+                      "Uploading designs automatically to social media",
+                      "Pulling content from connected tools and transforming it into polished creative materials",
+                      "Generating images directly from text prompts",
+                      "Managing design file version history"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The workflow is: content lives in a connected tool → Claude retrieves it via Connector → Claude transforms it into professional creative materials ready for designers or direct use."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v4",
+              "title": "Using the GitHub integration",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1014496696",
+              "provider": "vimeo",
+              "reason": "Official guide to the GitHub Connector — enabling Claude to read your repositories for context-aware code reviews, codebase questions, and pull request analysis.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v4-q1",
+                    "question": "What can Claude do with the GitHub Connector enabled?",
+                    "choices": [
+                      "Create and push new commits to your repositories",
+                      "Read your codebase to provide context-aware code reviews and answer questions about the code",
+                      "Deploy code to production environments",
+                      "Manage repository permissions for your team"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The GitHub Connector gives Claude read access to your repositories — enabling it to review code with full context, explain how modules work, and answer detailed codebase questions."
+                  },
+                  {
+                    "id": "s4v4-q2",
+                    "question": "True or False: Claude can analyze a pull request diff and provide a detailed code review via the GitHub integration.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "With the GitHub integration, Claude can read PR diffs and provide comprehensive code reviews — flagging issues, suggesting improvements, and explaining the impact of changes."
+                  },
+                  {
+                    "id": "s4v4-q3",
+                    "question": "How does the GitHub integration primarily benefit a development team?",
+                    "choices": [
+                      "It replaces GitHub entirely with Claude",
+                      "It lets Claude access repository context to give far more accurate, codebase-aware assistance",
+                      "It automatically merges approved pull requests",
+                      "It generates commits on behalf of developers"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The key benefit is context — instead of pasting snippets, developers can ask Claude questions about the actual codebase, getting much more accurate and relevant help."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v5",
+              "title": "Using the Google Docs integration",
+              "channel": "Anthropic",
+              "url": "https://vimeo.com/1045796503",
+              "provider": "vimeo",
+              "reason": "Shows how the Google Docs Connector enables Claude to reference and work with your Drive documents as context — eliminating manual copy-pasting from your files.",
+              "level": "Regular",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v5-q1",
+                    "question": "What does the Google Docs Connector enable Claude to do?",
+                    "choices": [
+                      "Create a new Google Workspace account",
+                      "Access and work with documents stored in your Google Drive as conversation context",
+                      "Automatically share your documents with your entire organization",
+                      "Convert Google Docs to Microsoft Word format"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The Google Docs Connector lets Claude read your Drive files, enabling it to reference, analyze, summarize, or build on your existing documents directly."
+                  },
+                  {
+                    "id": "s4v5-q2",
+                    "question": "True or False: The Google Docs integration currently allows Claude to directly edit and save changes back to your Google Docs.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The current Google Docs integration provides read access — Claude can read your documents for context, but you'll need to manually apply its edits back into the document."
+                  },
+                  {
+                    "id": "s4v5-q3",
+                    "question": "What is the primary benefit of the Google Docs integration?",
+                    "choices": [
+                      "Automatic document saving to the cloud",
+                      "Giving Claude context from your existing documents without manual copy-pasting",
+                      "Syncing documents across all cloud services",
+                      "Converting file formats automatically"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The core benefit is removing friction — instead of copying document content into Claude manually, the integration lets Claude read your Drive files directly as context."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "s4t2-finance",
+          "title": "Financial Services",
+          "description": "Advanced use cases for finance professionals: research, modeling, and investment memo workflows that dramatically accelerate analytical work.",
+          "videos": [
+            {
+              "id": "s4v6",
+              "title": "Using Claude for Financial Services — investment research",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=XhVdy2ZwI_Y",
+              "provider": "youtube",
+              "reason": "Shows finance professionals how to use Claude to gather and synthesize research, analyze company documents, and surface key insights for investment decisions.",
+              "level": "Advanced",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v6-q1",
+                    "question": "How can Claude support investment research workflows?",
+                    "choices": [
+                      "By providing certified financial advice on securities",
+                      "By gathering and synthesizing information from multiple sources into structured research summaries",
+                      "By directly accessing live stock prices and order books",
+                      "By automatically executing trades based on its analysis"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude helps analysts speed up the research phase by reading large volumes of information — reports, filings, articles — and synthesizing them into structured, readable research briefs."
+                  },
+                  {
+                    "id": "s4v6-q2",
+                    "question": "True or False: Claude can analyze an earnings report to identify key risks and growth opportunities.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can read earnings reports, 10-Ks, and financial filings to extract key metrics, management commentary, risk factors, and opportunities — providing a strong starting point for analyst review."
+                  },
+                  {
+                    "id": "s4v6-q3",
+                    "question": "What important limitation should always be kept in mind when using Claude for financial research?",
+                    "choices": [
+                      "Claude cannot process documents longer than 10 pages",
+                      "Claude's outputs are not certified financial advice and should be verified by qualified professionals",
+                      "Claude only works with publicly available information",
+                      "Claude cannot process numerical data"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude is a powerful research tool, but its outputs should be treated as a starting point for analyst work — not as final investment recommendations — and reviewed by qualified financial professionals."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v7",
+              "title": "Using Claude for Financial Services — analysis and modeling",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=mIogn8Q4VFk",
+              "provider": "youtube",
+              "reason": "Demonstrates how to use Claude to build financial models, perform scenario analyses, and interpret balance sheets and income statements.",
+              "level": "Advanced",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v7-q1",
+                    "question": "What types of financial analysis can Claude assist with?",
+                    "choices": [
+                      "Executing trades and managing live portfolios",
+                      "Building model structures, analyzing datasets, and producing scenario analyses",
+                      "Managing compliance reporting for regulatory bodies",
+                      "Automating portfolio rebalancing"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can scaffold financial models, generate formulas, analyze financial datasets, and walk through different scenarios — accelerating the analytical work of finance professionals."
+                  },
+                  {
+                    "id": "s4v7-q2",
+                    "question": "True or False: Claude can walk through multiple financial scenarios by adjusting assumptions and comparing outcomes.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can calculate the impact of different assumption sets — best case, base case, worst case — and present a structured comparison, speeding up scenario analysis significantly."
+                  },
+                  {
+                    "id": "s4v7-q3",
+                    "question": "Which financial document type is Claude most effective at analyzing?",
+                    "choices": [
+                      "Real-time stock ticker feeds",
+                      "Balance sheets, income statements, and cash flow statements",
+                      "Insurance policy contracts",
+                      "Individual tax return forms"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can read and interpret standard financial statements, identify trends and anomalies, and provide structured summaries and analysis — making it highly useful for fundamental analysis workflows."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v8",
+              "title": "Building a dynamic financial model",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=RB0JQUF2eB4",
+              "provider": "youtube",
+              "reason": "Step-by-step walkthrough of using Claude to generate spreadsheet structures, dynamic formulas, and data tables for financial models ready to use in Excel or Google Sheets.",
+              "level": "Advanced",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v8-q1",
+                    "question": "How does Claude help with building a financial model?",
+                    "choices": [
+                      "By automatically connecting to your bank accounts and pulling data",
+                      "By generating spreadsheet structures, formulas, and dynamic tables based on your requirements",
+                      "By replacing dedicated financial modeling software",
+                      "By predicting future stock prices based on historical data"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Claude can design financial model structures — revenue projections, expense breakdowns, scenario tables — and generate the formulas and logic ready to import into Excel or Google Sheets."
+                  },
+                  {
+                    "id": "s4v8-q2",
+                    "question": "True or False: Claude can explain the logic behind every formula it creates in a financial model.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude doesn't just generate formulas — it can explain exactly what each formula does, making the model transparent and helping finance teams understand and validate the logic."
+                  },
+                  {
+                    "id": "s4v8-q3",
+                    "question": "What is the primary advantage of using Claude to build a financial model?",
+                    "choices": [
+                      "It is an SEC-certified modeling tool",
+                      "It can scaffold complex model structures in minutes that would otherwise take hours to build manually",
+                      "It directly connects to Bloomberg Terminal for live data",
+                      "It removes the need for Excel or Google Sheets entirely"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "The core advantage is speed — revenue projections, sensitivity analyses, and scenario tables that would take hours to build from scratch can be scaffolded by Claude in minutes."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "s4v9",
+              "title": "Using Claude for Financial Services — investment memos",
+              "channel": "Anthropic",
+              "url": "https://www.youtube.com/watch?v=jjdAf3eWZYg",
+              "provider": "youtube",
+              "reason": "Shows how analysts can use Claude to transform raw research notes into polished, structured investment memos ready for committee review.",
+              "level": "Advanced",
+              "duration": "unknown",
+              "views": "unknown",
+              "published_date": "unknown",
+              "top_pick": false,
+              "official": true,
+              "quiz": {
+                "questions": [
+                  {
+                    "id": "s4v9-q1",
+                    "question": "What is an investment memo?",
+                    "choices": [
+                      "A daily price tracking spreadsheet",
+                      "A structured document summarizing the investment thesis, key risks, and recommendation",
+                      "A legal contract formalizing an investment agreement",
+                      "A portfolio performance attribution report"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "An investment memo captures the core rationale for an investment decision — the opportunity, the financial case, and the risks — in a structured format for review by decision-makers or investment committees."
+                  },
+                  {
+                    "id": "s4v9-q2",
+                    "question": "True or False: Claude can draft a full investment memo from bullet-point research notes you provide.",
+                    "choices": [
+                      "True",
+                      "False"
+                    ],
+                    "answerIndex": 0,
+                    "explanation": "Claude can take rough notes, data points, and research summaries and transform them into a well-structured, professionally written investment memo with appropriate sections and language."
+                  },
+                  {
+                    "id": "s4v9-q3",
+                    "question": "How does Claude primarily speed up the investment memo writing process?",
+                    "choices": [
+                      "By automatically approving investment decisions",
+                      "By generating a polished first draft from your research in minutes, reducing writing time significantly",
+                      "By fetching real-time market data to include in the memo",
+                      "By replacing the investment committee review process"
+                    ],
+                    "answerIndex": 1,
+                    "explanation": "Writing a memo from scratch is time-consuming. Claude produces a structured, well-written first draft quickly from your raw research — letting analysts focus on refining substance and accuracy rather than formatting."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
