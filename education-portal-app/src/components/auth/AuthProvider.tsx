@@ -6,7 +6,7 @@ export type AuthUser = {
   id: string;
   internalId: string;
   name: string;
-  role: "learner" | "manager";
+  role: "learner" | "manager" | "admin";
   teamId: string;
 };
 

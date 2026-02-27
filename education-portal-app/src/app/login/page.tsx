@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { signIn } from "next-auth/react";
 import { useAuth } from "@/components/auth/AuthProvider";
 
 const DEMO_ACCOUNTS = [
@@ -18,12 +19,20 @@ const TEAM_NAMES: Record<string, string> = {
   beta: "Beta",
 };
 
+const SSO_ERRORS: Record<string, string> = {
+  not_provisioned: "Your Microsoft account is not linked to a portal account. Contact your administrator.",
+  sso_failed: "Microsoft sign-in failed. Please try again.",
+};
+
 export default function LoginPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { login } = useAuth();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(
+    SSO_ERRORS[searchParams.get("error") ?? ""] ?? null
+  );
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent) => {
@@ -87,6 +96,26 @@ export default function LoginPage() {
               {isSubmitting ? "Signing in…" : "Sign in →"}
             </button>
           </form>
+
+          <div className="mt-5 flex items-center gap-3">
+            <hr className="flex-1 border-slate-200" />
+            <span className="text-xs text-slate-400">or</span>
+            <hr className="flex-1 border-slate-200" />
+          </div>
+
+          <button
+            type="button"
+            className="mt-4 flex w-full items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 shadow-sm transition hover:border-teal-300 hover:bg-slate-50"
+            onClick={() => signIn("azure-ad", { callbackUrl: "/api/auth/sso-callback" })}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" width="20" height="20" aria-hidden="true">
+              <rect x="1" y="1" width="9" height="9" fill="#f25022" />
+              <rect x="11" y="1" width="9" height="9" fill="#7fba00" />
+              <rect x="1" y="11" width="9" height="9" fill="#00a4ef" />
+              <rect x="11" y="11" width="9" height="9" fill="#ffb900" />
+            </svg>
+            Sign in with Microsoft
+          </button>
         </div>
 
         {/* Demo accounts */}

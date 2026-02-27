@@ -32,9 +32,14 @@ export default function NavBar() {
             <NavLink href="/dashboard" label="My Dashboard" />
             <NavLink href="/path" label="Learning path" />
             <NavLink href="/assistant" label="AI Assistant" />
-            {user.role === "manager" && (
+            {(user.role === "manager" || user.role === "admin") && (
               <Link href="/manager" className="font-bold text-red-600 hover:text-red-700 transition">
                 Manager&apos;s Dashboard
+              </Link>
+            )}
+            {user.role === "admin" && (
+              <Link href="/admin" className="font-bold text-purple-600 hover:text-purple-700 transition">
+                Admin
               </Link>
             )}
           </>

@@ -15,6 +15,7 @@ const TEAMS = [
   { id: "gamma", name: "Gamma",   track: "dev"      },
   { id: "beta",  name: "Beta",    track: "business" },
   { id: "delta", name: "Delta",   track: "business" },
+  { id: "ai",    name: "AI",      track: "dev"      },
 ];
 
 const USERS = [
@@ -45,6 +46,10 @@ const USERS = [
   { externalId: "lucy",    name: "Lucy Marsh",      role: "learner", teamId: "delta", password: "claude123" },
   { externalId: "ben",     name: "Ben Adeyemi",     role: "learner", teamId: "delta", password: "claude123" },
   { externalId: "mei",     name: "Mei Zhang",       role: "learner", teamId: "delta", password: "claude123" },
+
+  // ── AI (dev) ─────────────────────────────────────────────────────────────
+  { externalId: "lior.k",   name: "Lior K",    role: "manager", teamId: "ai", email: "lior.k@xbo.com",    password: "manage123" },
+  { externalId: "charles.k", name: "Charles K", role: "learner", teamId: "ai", email: "charles.k@xbo.com", password: "claude123" },
 ];
 
 async function main() {
@@ -59,11 +64,11 @@ async function main() {
 
   console.log("Seeding users…");
   for (const u of USERS) {
-    const passwordHash = await bcrypt.hash(u.password, 10);
+    const passwordHash = u.password ? await bcrypt.hash(u.password, 10) : null;
     await db.user.upsert({
       where: { externalId: u.externalId },
-      update: { name: u.name, role: u.role, teamId: u.teamId, passwordHash },
-      create: { externalId: u.externalId, name: u.name, role: u.role, teamId: u.teamId, passwordHash },
+      update: { name: u.name, role: u.role, teamId: u.teamId, passwordHash, email: u.email ?? null },
+      create: { externalId: u.externalId, name: u.name, role: u.role, teamId: u.teamId, passwordHash, email: u.email ?? null },
     });
   }
 

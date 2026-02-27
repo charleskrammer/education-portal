@@ -16,6 +16,13 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
     }
 
+    if (!user.passwordHash) {
+      return NextResponse.json(
+        { error: "This account uses Microsoft SSO. Please sign in with Microsoft." },
+        { status: 401 }
+      );
+    }
+
     const valid = await bcrypt.compare(password, user.passwordHash);
     if (!valid) {
       return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });

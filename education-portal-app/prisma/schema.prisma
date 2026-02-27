@@ -15,11 +15,12 @@ datasource db {
 model User {
   id           String   @id @default(cuid())
   externalId   String   @unique // original id from users.json e.g. "alex"
+  email        String?  @unique // Microsoft UPN / email for SSO lookup
   name         String
   role         String   // "learner" | "manager"
   teamId       String
   team         Team     @relation(fields: [teamId], references: [id])
-  passwordHash String
+  passwordHash String?           // null for SSO-only users
   createdAt    DateTime @default(now())
 
   sessions     Session[]

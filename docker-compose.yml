@@ -10,7 +10,7 @@
 # Never use these values in production. Production secrets must be injected via
 # your secret manager (e.g. GitHub Actions secrets, Vault, AWS Secrets Manager).
 #
-# Optional: create .env.local with ANTHROPIC_API_KEY=... for AI features.
+# Secrets: add ANTHROPIC_API_KEY, AZURE_AD_*, NEXTAUTH_* to education-portal-app/.env
 name: claude-training-portal
 
 services:
@@ -42,7 +42,7 @@ services:
       NODE_ENV: production
       PORT: "8080"
     env_file:
-      - path: .env.local
+      - path: ./education-portal-app/.env
         required: false
     depends_on:
       db:

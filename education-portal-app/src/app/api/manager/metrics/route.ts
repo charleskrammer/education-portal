@@ -7,7 +7,7 @@ import { latestAttemptsPerQuiz, sumScore } from "@/lib/scoring/server";
 export async function GET() {
   const user = await getSessionUser();
   if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  if (user.role !== "manager") return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  if (user.role !== "manager" && user.role !== "admin") return NextResponse.json({ error: "Forbidden" }, { status: 403 });
 
   const teamMembers = await db.user.findMany({
     where: { teamId: user.teamId },
