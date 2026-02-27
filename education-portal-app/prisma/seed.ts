@@ -49,7 +49,7 @@ const USERS = [
 
   // ── AI (dev) ─────────────────────────────────────────────────────────────
   { externalId: "lior.k",   name: "Lior K",    role: "manager", teamId: "ai", email: "lior.k@xbo.com",    password: "manage123" },
-  { externalId: "charles.k", name: "Charles K", role: "learner", teamId: "ai", email: "charles.k@xbo.com", password: "claude123" },
+  { externalId: "charles.k", name: "Charles K", role: "admin",   teamId: "ai", email: "charles.k@xbo.com", password: "claude123" },
 ];
 
 async function main() {

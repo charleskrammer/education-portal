@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { logger } from "@/lib/logger";
 
 export async function GET() {
