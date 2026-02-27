@@ -41,12 +41,14 @@ export default function AdminPage() {
   const [fetching, setFetching] = useState(true);
 
   // ── User add / edit form ────────────────────────────────────────────────────
+  const [userFormOpen, setUserFormOpen] = useState(false);
   const [editTarget, setEditTarget] = useState<AdminUser | null>(null);
   const [form, setForm] = useState({ name: "", email: "", role: "learner", teamId: "" });
   const [formError, setFormError] = useState<string | null>(null);
   const [formSaving, setFormSaving] = useState(false);
 
   // ── Team add / edit form ────────────────────────────────────────────────────
+  const [teamFormOpen, setTeamFormOpen] = useState(false);
   const [teamEditTarget, setTeamEditTarget] = useState<AdminTeam | null>(null);
   const [teamForm, setTeamForm] = useState({ name: "", track: "business" });
   const [teamFormError, setTeamFormError] = useState<string | null>(null);
@@ -81,18 +83,21 @@ export default function AdminPage() {
   // ── User helpers ────────────────────────────────────────────────────────────
 
   function openAdd() {
+    setUserFormOpen(true);
     setEditTarget(null);
     setForm({ name: "", email: "", role: "learner", teamId: teams[0]?.id ?? "" });
     setFormError(null);
   }
 
   function openEdit(u: AdminUser) {
+    setUserFormOpen(true);
     setEditTarget(u);
     setForm({ name: u.name, email: u.email ?? "", role: u.role, teamId: u.teamId });
     setFormError(null);
   }
 
   function closeForm() {
+    setUserFormOpen(false);
     setEditTarget(null);
     setForm({ name: "", email: "", role: "learner", teamId: "" });
     setFormError(null);
@@ -147,18 +152,21 @@ export default function AdminPage() {
   // ── Team helpers ────────────────────────────────────────────────────────────
 
   function openAddTeam() {
+    setTeamFormOpen(true);
     setTeamEditTarget(null);
     setTeamForm({ name: "", track: "business" });
     setTeamFormError(null);
   }
 
   function openEditTeam(t: AdminTeam) {
+    setTeamFormOpen(true);
     setTeamEditTarget(t);
     setTeamForm({ name: t.name, track: t.track });
     setTeamFormError(null);
   }
 
   function closeTeamForm() {
+    setTeamFormOpen(false);
     setTeamEditTarget(null);
     setTeamForm({ name: "", track: "business" });
     setTeamFormError(null);
@@ -207,8 +215,8 @@ export default function AdminPage() {
 
   // ── Render ─────────────────────────────────────────────────────────────────
 
-  const isFormOpen     = editTarget !== null || form.name !== "" || form.email !== "";
-  const isTeamFormOpen = teamEditTarget !== null || teamForm.name !== "";
+  const isFormOpen     = userFormOpen;
+  const isTeamFormOpen = teamFormOpen;
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-10 space-y-8">
